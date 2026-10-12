@@ -1,0 +1,51 @@
+
+dataContractSpecification: 0.9.3
+
+id: sales-orders-v1
+
+info:
+  title: Sales Orders Data Contract
+  owner: data-engineering
+  consumer: BI-dashboard
+  description: Contract for validated sales order data
+
+sla:
+  freshness: "Within 2 hours"
+  availability: "99.5%"
+
+models:
+  sales:
+    type: table
+    fields:
+      order_id:
+        type: integer
+        required: true
+        unique: true
+
+      customer_id:
+        type: string
+        required: true
+        classification: internal
+
+      customer_email:
+        type: string
+        required: true
+        classification: confidential
+        pii: true
+        masking: "Mask email local part in dashboard"
+
+      age:
+        type: integer
+        required: true
+        minimum: 18
+        maximum: 100
+
+      amount:
+        type: number
+        required: true
+        minimum: 0
+
+      order_date:
+        type: date
+        required: true
+        format: YYYY-MM-DD

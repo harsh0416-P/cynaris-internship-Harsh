@@ -1,0 +1,11 @@
+order_id,customer_id,customer_email,age,amount,order_date
+101,,customer1@example.com,22,500,2026-10-01
+101,C02,customer2@example.com,30,1200,2026-10-02
+103,C03,customer3@example.com,150,750,2026-10-03
+104,C04,customer4@example.com,40,2000,2026-10-04
+105,C05,customer5@example.com,35,1500,2026-10-05
+106,C06,customer6@example.com,28,900,2026-10-06
+107,C07,customer7@example.com,45,3000,2026-10-07
+108,C08,customer8@example.com,32,650,2026-10-08
+109,C09,customer9@example.com,26,850,2026-10-09
+110,C10,customer10@example.com,38,1100,2026-10-10
