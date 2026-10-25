@@ -1,0 +1,5 @@
+.venv/
+.venv-pandasai/
+__pycache__/
+cache/
+*.pyc

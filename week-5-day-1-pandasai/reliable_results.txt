@@ -1,0 +1,757 @@
+INDIAN AIR QUALITY - ANALYSIS RESULTS
+Dataset shape: (3752, 11)
+
+1. How many records are in this dataset?
+3752
+
+2. Which states are represented?
+['Andhra Pradesh', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chandigarh', 'Chhattisgarh', 'Delhi', 'Gujarat', 'Haryana', 'Himachal Pradesh', 'Jammu and Kashmir', 'Jharkhand', 'Karnataka', 'Kerala', 'Ladakh', 'Madhya Pradesh', 'Maharashtra', 'Meghalaya', 'Mizoram', 'Nagaland', 'Odisha', 'Puducherry', 'Punjab', 'Rajasthan', 'Sikkim', 'Tamil Nadu', 'Telangana', 'Tripura', 'Uttar Pradesh', 'Uttarakhand', 'West Bengal']
+
+3. How many unique cities are represented?
+282
+
+4. Counts of each pollutant type
+{'NO2': 536, 'SO2': 536, 'OZONE': 536, 'PM10': 536, 'NH3': 536, 'CO': 536, 'PM2.5': 536}
+
+5. Overall average pollutant_avg
+49.02
+
+6. Five cities with highest average pollutant_avg
+{'Baraut': 134.5, 'Meerut': 113.33, 'Gajraula': 102.29, 'Baghpat': 92.43, 'Mandideep': 91.14}
+
+7. Average pollutant_avg by pollutant_id
+{'CO': 39.81, 'NH3': 5.37, 'NO2': 31.44, 'OZONE': 35.24, 'PM10': 110.07, 'PM2.5': 101.97, 'SO2': 14.49}
+
+8. Missing values by column
+{'country': 0, 'state': 0, 'city': 0, 'station': 0, 'last_update': 0, 'latitude': 0, 'longitude': 0, 'pollutant_id': 0, 'pollutant_min': 308, 'pollutant_max': 308, 'pollutant_avg': 308}
+
+9. Records where pollutant_avg > 100
+           state             city pollutant_id  pollutant_avg
+           Bihar      Muzaffarpur        PM2.5          103.0
+           Bihar            Patna         PM10          101.0
+           Bihar          Hajipur        PM2.5          110.0
+  Andhra Pradesh    Visakhapatnam         PM10          169.0
+           Bihar           Araria        PM2.5          152.0
+           Delhi            Delhi        PM2.5          195.0
+           Delhi            Delhi         PM10          207.0
+           Delhi            Delhi        PM2.5          249.0
+           Delhi            Delhi        PM2.5          259.0
+           Delhi            Delhi        PM2.5          290.0
+           Delhi            Delhi        PM2.5          151.0
+           Delhi            Delhi        OZONE          115.0
+           Delhi            Delhi        PM2.5          149.0
+           Delhi            Delhi         PM10          130.0
+           Delhi            Delhi        PM2.5          163.0
+           Delhi            Delhi        PM2.5          179.0
+           Delhi            Delhi         PM10          211.0
+           Delhi            Delhi         PM10          183.0
+           Delhi            Delhi        PM2.5          202.0
+           Delhi            Delhi         PM10          173.0
+           Delhi            Delhi         PM10          137.0
+           Delhi            Delhi         PM10          152.0
+         Gujarat            Surat        PM2.5          124.0
+         Gujarat         Vadodara         PM10          115.0
+         Gujarat            Vatva         PM10          172.0
+         Haryana           Ambala         PM10          159.0
+         Haryana      Bahadurgarh        PM2.5          181.0
+         Haryana          Bhiwani         PM10          102.0
+           Delhi            Delhi        PM2.5          105.0
+           Delhi            Delhi         PM10          126.0
+           Delhi            Delhi         PM10          148.0
+           Delhi            Delhi        PM2.5          169.0
+           Delhi            Delhi         PM10          167.0
+           Delhi            Delhi        PM2.5          245.0
+           Delhi            Delhi         PM10          212.0
+           Delhi            Delhi        OZONE          102.0
+         Gujarat        Ahmedabad         PM10          132.0
+         Gujarat      Gandhinagar         PM10          111.0
+         Gujarat            Surat        PM2.5          126.0
+           Delhi            Delhi         PM10          220.0
+           Delhi            Delhi           CO          102.0
+         Gujarat        Ahmedabad        PM2.5          137.0
+         Gujarat        Ahmedabad         PM10          221.0
+           Delhi            Delhi        PM2.5          135.0
+           Delhi            Delhi         PM10          150.0
+           Delhi            Delhi        PM2.5          221.0
+         Haryana         Gurugram         PM10          108.0
+         Haryana             Jind        PM2.5          151.0
+  Madhya Pradesh        Mandideep        PM2.5          178.0
+  Madhya Pradesh        Mandideep          NO2          117.0
+  Madhya Pradesh           Bhopal         PM10          126.0
+  Madhya Pradesh          Gwalior         PM10          111.0
+  Madhya Pradesh          Gwalior         PM10          123.0
+         Haryana          Sonipat        PM2.5          272.0
+       Karnataka          Raichur         PM10          102.0
+  Madhya Pradesh           Indore        PM2.5          127.0
+  Madhya Pradesh           Indore          NO2          101.0
+     Maharashtra Pimpri-Chinchwad          NO2          110.0
+     Maharashtra             Pune        PM2.5          156.0
+     Maharashtra             Pune        PM2.5          109.0
+     Maharashtra           Mumbai         PM10          129.0
+     Maharashtra           Mumbai         PM10          148.0
+     Maharashtra           Mumbai        PM2.5          129.0
+     Maharashtra           Mumbai         PM10          122.0
+     Maharashtra           Mumbai         PM10          138.0
+     Maharashtra           Mumbai        PM2.5          128.0
+     Maharashtra           Nagpur         PM10          115.0
+     Maharashtra           Nagpur        PM2.5          117.0
+     Maharashtra           Nagpur         PM10          118.0
+     Maharashtra           Nagpur         PM10          103.0
+     Maharashtra           Nashik         PM10          115.0
+     Maharashtra      Navi Mumbai         PM10          148.0
+     Maharashtra      Navi Mumbai        PM2.5          154.0
+     Maharashtra Pimpri-Chinchwad         PM10          123.0
+     Maharashtra Pimpri-Chinchwad        PM2.5          141.0
+     Maharashtra       Ulhasnagar         PM10          113.0
+       Meghalaya         Byrnihat         PM10          173.0
+     Maharashtra         Bhiwandi         PM10          122.0
+     Maharashtra         Dombivli        PM2.5          110.0
+     Maharashtra           Kalyan         PM10          114.0
+     Maharashtra         Malegaon        PM2.5          105.0
+     Maharashtra           Mumbai         PM10          156.0
+       Rajasthan           Nagaur         PM10          154.0
+       Rajasthan       Pratapgarh         PM10          120.0
+       Rajasthan   Sawai Madhopur        PM2.5          150.0
+       Rajasthan      Hanumangarh        PM2.5          149.0
+       Rajasthan      Hanumangarh         PM10          143.0
+       Rajasthan           Jaipur        OZONE          102.0
+       Rajasthan        Jaisalmer         PM10          144.0
+       Rajasthan        Jhunjhunu         PM10          102.0
+       Rajasthan          Jodhpur         PM10          162.0
+       Rajasthan             Kota        PM2.5          242.0
+       Rajasthan             Kota         PM10          203.0
+          Punjab         Bathinda        PM2.5          140.0
+          Odisha         Balasore        OZONE          113.0
+       Rajasthan           Barmer         PM10          101.0
+       Rajasthan          Bhiwadi         PM10          157.0
+       Rajasthan            Bundi         PM10          176.0
+       Rajasthan            Churu         PM10          107.0
+       Rajasthan            Churu        OZONE          106.0
+     West Bengal      Barrackpore         PM10          101.0
+     West Bengal           Howrah         PM10          138.0
+     West Bengal           Howrah        PM2.5          135.0
+     West Bengal           Howrah        PM2.5          138.0
+   Uttar Pradesh        Vrindavan         PM10          139.0
+     West Bengal          Asansol        PM2.5          117.0
+   Uttar Pradesh           Meerut         PM10          240.0
+   Uttar Pradesh           Meerut        PM2.5          341.0
+   Uttar Pradesh           Meerut        PM2.5          312.0
+   Uttar Pradesh        Ghaziabad        PM2.5          196.0
+   Uttar Pradesh        Ghaziabad         PM10          138.0
+   Uttar Pradesh           Baraut         PM10          252.0
+   Uttar Pradesh      Bulandshahr        PM2.5          152.0
+   Uttar Pradesh        Firozabad         PM10          103.0
+   Uttar Pradesh         Gajraula        PM2.5          301.0
+   Uttar Pradesh        Ghaziabad         PM10          196.0
+   Uttar Pradesh        Ghaziabad        PM2.5          266.0
+   Uttar Pradesh            Noida        PM2.5          105.0
+   Uttar Pradesh            Noida        PM2.5          168.0
+   Uttar Pradesh            Noida         PM10          195.0
+   Uttar Pradesh           Shamli         PM10          102.0
+   Uttar Pradesh            Khora         PM10          160.0
+   Uttar Pradesh           Khurja        PM2.5          102.0
+   Uttar Pradesh          Lucknow        PM2.5          204.0
+   Uttar Pradesh          Lucknow         PM10          144.0
+     West Bengal          Kolkata         PM10          126.0
+           Bihar         Motihari        PM2.5          101.0
+           Bihar           Purnia        PM2.5          116.0
+           Bihar          Chhapra         PM10          101.0
+         Gujarat        Ahmedabad        PM2.5          109.0
+         Gujarat        Ahmedabad         PM10          171.0
+         Gujarat       Ankleshwar        PM2.5          157.0
+         Gujarat       Ankleshwar         PM10          148.0
+         Gujarat        Bhavnagar        PM2.5          187.0
+           Delhi            Delhi         PM10          192.0
+           Delhi            Delhi        OZONE          104.0
+           Delhi            Delhi         PM10          115.0
+           Delhi            Delhi         PM10          118.0
+           Delhi            Delhi        OZONE          118.0
+           Delhi            Delhi        PM2.5          181.0
+           Delhi            Delhi         PM10          149.0
+           Delhi            Delhi         PM10          135.0
+           Delhi            Delhi        PM2.5          239.0
+           Delhi            Delhi         PM10          218.0
+           Delhi            Delhi        PM2.5          254.0
+           Delhi            Delhi          NO2          101.0
+           Delhi            Delhi        PM2.5          136.0
+           Delhi            Delhi         PM10          158.0
+           Delhi            Delhi        PM2.5          170.0
+           Delhi            Delhi          NO2          120.0
+           Delhi            Delhi         PM10          202.0
+           Delhi            Delhi        PM2.5          151.0
+           Delhi            Delhi         PM10          216.0
+           Delhi            Delhi          NO2          118.0
+           Delhi            Delhi        PM2.5          110.0
+         Gujarat          Mehsana        PM2.5          238.0
+         Gujarat          Mehsana         PM10          146.0
+         Gujarat           Rajkot         PM10          112.0
+         Gujarat            Vatva        PM2.5          154.0
+         Haryana       Ballabgarh        PM2.5          239.0
+         Haryana        Dharuhera         PM10          121.0
+         Haryana        Faridabad         PM10          123.0
+         Haryana        Fatehabad         PM10          105.0
+         Haryana         Gurugram         PM10          122.0
+         Haryana           Karnal         PM10          117.0
+         Haryana      Kurukshetra         PM10          186.0
+         Haryana       Mandikhera        PM2.5          124.0
+         Haryana     Yamuna Nagar        PM2.5          152.0
+  Madhya Pradesh          Gwalior        PM2.5          173.0
+     Maharashtra            Mahad        PM2.5          119.0
+     Maharashtra           Mumbai        PM2.5          106.0
+  Madhya Pradesh        Pithampur        PM2.5          161.0
+  Madhya Pradesh           Ujjain        PM2.5          140.0
+  Madhya Pradesh           Ujjain         PM10          107.0
+     Maharashtra       Ahmednagar         PM10          128.0
+     Maharashtra           Nagpur        PM2.5          146.0
+     Maharashtra           Nashik        PM2.5          107.0
+     Maharashtra         Dombivli         PM10          106.0
+     Maharashtra            Jalna        PM2.5          182.0
+     Maharashtra           Kalyan        PM2.5          109.0
+     Maharashtra           Mumbai         PM10          145.0
+     Maharashtra           Mumbai        PM2.5          141.0
+     Maharashtra Pimpri-Chinchwad        PM2.5          136.0
+     Maharashtra       Aurangabad         PM10          124.0
+     Maharashtra          Belapur        PM2.5          110.0
+     Maharashtra           Mumbai         PM10          126.0
+  Madhya Pradesh           Indore         PM10          138.0
+  Madhya Pradesh        Mandideep         PM10          211.0
+     Maharashtra       Ulhasnagar        PM2.5          137.0
+     Maharashtra       Ulhasnagar         PM10          111.0
+     Maharashtra       Ulhasnagar        OZONE          103.0
+     Maharashtra Pimpri-Chinchwad        PM2.5          134.0
+     Maharashtra Pimpri-Chinchwad           CO          113.0
+     Maharashtra Pimpri-Chinchwad        PM2.5          166.0
+     Maharashtra Pimpri-Chinchwad         PM10          185.0
+     Maharashtra             Pune         PM10          129.0
+       Rajasthan          Jodhpur         PM10          130.0
+       Rajasthan             Kota         PM10          102.0
+       Rajasthan          Jodhpur         PM10          150.0
+       Rajasthan          Bikaner         PM10          195.0
+   Uttar Pradesh          Baghpat        PM2.5          273.0
+         Tripura         Agartala        PM2.5          119.0
+   Uttar Pradesh        Modinagar        PM2.5          228.0
+   Uttar Pradesh        Moradabad         PM10          134.0
+   Uttar Pradesh        Moradabad        PM2.5          104.0
+       Rajasthan   Sri Ganganagar        PM2.5          174.0
+       Rajasthan             Tonk         PM10          142.0
+   Uttar Pradesh        Ghaziabad         PM10          240.0
+   Uttar Pradesh        Ghaziabad         PM10          155.0
+   Uttar Pradesh        Ghaziabad         PM10          179.0
+   Uttar Pradesh           Khurja         PM10          131.0
+   Uttar Pradesh        Ghaziabad         PM10          164.0
+   Uttar Pradesh         Varanasi         PM10          144.0
+   Uttar Pradesh         Varanasi         PM10          129.0
+     West Bengal           Howrah        PM2.5          161.0
+     West Bengal           Howrah         PM10          103.0
+     West Bengal          Kolkata        PM2.5          108.0
+     West Bengal          Kolkata         PM10          113.0
+     West Bengal          Kolkata         PM10          110.0
+           Bihar          Sasaram         PM10          158.0
+           Assam         Guwahati         PM10          131.0
+         Haryana        Faridabad         PM10          111.0
+         Haryana         Gurugram        PM2.5          162.0
+         Haryana         Gurugram        PM2.5          137.0
+         Haryana         Gurugram         PM10          169.0
+         Haryana         Gurugram         PM10          181.0
+           Delhi            Delhi         PM10          241.0
+           Delhi            Delhi        PM2.5          199.0
+           Delhi            Delhi         PM10          207.0
+           Delhi            Delhi         PM10          251.0
+           Delhi            Delhi          NO2          107.0
+           Delhi            Delhi        PM2.5          241.0
+           Delhi            Delhi         PM10          123.0
+           Delhi            Delhi        PM2.5          201.0
+           Delhi            Delhi         PM10          180.0
+           Delhi            Delhi        PM2.5          275.0
+           Delhi            Delhi         PM10          248.0
+           Delhi            Delhi         PM10          285.0
+           Delhi            Delhi         PM10          138.0
+           Delhi            Delhi         PM10          139.0
+           Delhi            Delhi         PM10          170.0
+           Delhi            Delhi         PM10          159.0
+           Delhi            Delhi        PM2.5          150.0
+           Delhi            Delhi         PM10          174.0
+           Delhi            Delhi        PM2.5          207.0
+           Delhi            Delhi        OZONE          215.0
+           Delhi            Delhi         PM10          153.0
+           Delhi            Delhi        PM2.5          132.0
+         Gujarat        Ahmedabad        PM2.5          160.0
+         Gujarat      Gandhinagar         PM10          111.0
+           Delhi            Delhi         PM10          226.0
+           Delhi            Delhi         PM10          130.0
+         Gujarat        Ahmedabad         PM10          200.0
+         Gujarat        Ahmedabad         PM10          182.0
+         Gujarat        Ahmedabad         PM10          124.0
+           Delhi            Delhi        PM2.5          149.0
+           Delhi            Delhi        PM2.5          172.0
+         Haryana       Ballabgarh         PM10          192.0
+         Haryana          Manesar        PM2.5          180.0
+         Haryana           Rohtak        PM2.5          124.0
+         Haryana           Rohtak         PM10          102.0
+         Haryana          Sonipat         PM10          172.0
+     Maharashtra        Ambernath         PM10          178.0
+         Haryana     Yamuna Nagar         PM10          122.0
+Himachal Pradesh            Baddi         PM10          106.0
+  Madhya Pradesh         Jabalpur         PM10          125.0
+  Madhya Pradesh         Jabalpur        PM2.5          121.0
+  Madhya Pradesh         Jabalpur         PM10          120.0
+     Maharashtra            Dhule         PM10          104.0
+  Madhya Pradesh          Gwalior         PM10          190.0
+     Maharashtra           Satara        PM2.5          139.0
+       Meghalaya         Byrnihat        PM2.5          174.0
+     Maharashtra           Mumbai        PM2.5          147.0
+     Maharashtra           Mumbai        PM2.5          147.0
+     Maharashtra           Mumbai         PM10          142.0
+          Odisha         Paradeep         PM10          198.0
+     Maharashtra Pimpri-Chinchwad         PM10          132.0
+     Maharashtra             Pune         PM10          133.0
+     Maharashtra             Pune        PM2.5          163.0
+     Maharashtra             Pune         PM10          115.0
+     Maharashtra          Hingoli        PM2.5          177.0
+     Maharashtra            Jalna         PM10          123.0
+     Maharashtra           Mumbai        PM2.5          134.0
+     Maharashtra           Mumbai        PM2.5          124.0
+     Maharashtra           Mumbai        PM2.5          111.0
+     Maharashtra           Nashik        PM2.5          118.0
+          Odisha        Bileipada         PM10          121.0
+      Tamil Nadu          Chennai        OZONE          119.0
+      Tamil Nadu    Gummidipoondi        PM2.5          114.0
+      Tamil Nadu    Gummidipoondi         PM10          116.0
+       Telangana        Hyderabad        PM2.5          127.0
+       Rajasthan          Bhiwadi        PM2.5          121.0
+       Rajasthan             Pali        PM2.5          120.0
+       Rajasthan          Udaipur         PM10          114.0
+       Rajasthan          Jodhpur        PM2.5          113.0
+       Rajasthan          Jodhpur         PM10          142.0
+       Rajasthan             Kota        PM2.5          105.0
+   Uttar Pradesh         Bareilly        PM2.5          209.0
+   Uttar Pradesh      Bulandshahr         PM10          174.0
+   Uttar Pradesh   Fatehpur Sikri        PM2.5          101.0
+   Uttar Pradesh        Ghaziabad        PM2.5          244.0
+   Uttar Pradesh        Ghaziabad        PM2.5          205.0
+   Uttar Pradesh        Ghaziabad         PM10          207.0
+   Uttar Pradesh        Ghaziabad        PM2.5          197.0
+   Uttar Pradesh          Baghpat         PM10          194.0
+          Punjab         Amritsar         PM10          104.0
+          Punjab         Ludhiana         PM10          142.0
+   Uttar Pradesh    Greater Noida         PM10          181.0
+   Uttar Pradesh           Kanpur         PM10          108.0
+   Uttar Pradesh           Kanpur        PM2.5          217.0
+   Uttar Pradesh            Khora        PM2.5          174.0
+   Uttar Pradesh          Lucknow         PM10          139.0
+   Uttar Pradesh          Lucknow         PM10          112.0
+   Uttar Pradesh          Lucknow        PM2.5          103.0
+   Uttar Pradesh          Mathura         PM10          122.0
+   Uttar Pradesh           Meerut        PM2.5          315.0
+   Uttar Pradesh           Meerut         PM10          288.0
+   Uttar Pradesh    Muzaffarnagar         PM10          168.0
+   Uttar Pradesh            Noida        PM2.5          277.0
+   Uttar Pradesh        Prayagraj         PM10          148.0
+   Uttar Pradesh           Shamli        PM2.5          103.0
+   Uttar Pradesh         Varanasi        PM2.5          125.0
+   Uttar Pradesh         Varanasi         PM10          126.0
+     West Bengal          Asansol         PM10          101.0
+     West Bengal          Asansol        PM2.5          113.0
+     West Bengal           Howrah         PM10          112.0
+     West Bengal          Kolkata        PM2.5          131.0
+           Bihar           Araria         PM10          125.0
+           Bihar            Patna        PM2.5          120.0
+  Andhra Pradesh       Srikakulam        PM2.5          131.0
+  Andhra Pradesh       Srikakulam         PM10          161.0
+           Delhi            Delhi         PM10          227.0
+           Delhi            Delhi         PM10          138.0
+           Delhi            Delhi        PM2.5          123.0
+           Delhi            Delhi         PM10          187.0
+           Delhi            Delhi         PM10          207.0
+           Delhi            Delhi         PM10          271.0
+           Delhi            Delhi         PM10          217.0
+         Gujarat        Bhavnagar         PM10          175.0
+         Gujarat      Gandhinagar        PM2.5          112.0
+         Gujarat      Gandhinagar        PM2.5          127.0
+           Delhi            Delhi         PM10          227.0
+         Gujarat        Ahmedabad         PM10          138.0
+         Gujarat        Ahmedabad        PM2.5          149.0
+         Gujarat        Ahmedabad        PM2.5          211.0
+         Gujarat            Surat         PM10          126.0
+         Haryana      Bahadurgarh         PM10          174.0
+           Delhi            Delhi        PM2.5          118.0
+           Delhi            Delhi          NO2          101.0
+           Delhi            Delhi         PM10          167.0
+           Delhi            Delhi         PM10          220.0
+           Delhi            Delhi          NO2          116.0
+           Delhi            Delhi         PM10          150.0
+           Delhi            Delhi        PM2.5          232.0
+           Delhi            Delhi        PM2.5          241.0
+           Delhi            Delhi        PM2.5          191.0
+           Delhi            Delhi        PM2.5          279.0
+           Delhi            Delhi        PM2.5          176.0
+           Delhi            Delhi        PM2.5          158.0
+  Madhya Pradesh         Jabalpur         PM10          117.0
+  Madhya Pradesh            Katni         PM10          154.0
+  Madhya Pradesh        Pithampur         PM10          158.0
+  Madhya Pradesh           Ratlam          NO2          103.0
+         Haryana         Gurugram        PM2.5          144.0
+         Haryana         Gurugram        PM2.5          232.0
+     Maharashtra       Ahmednagar        PM2.5          104.0
+     Maharashtra       Aurangabad         PM10          111.0
+     Maharashtra       Aurangabad        PM2.5          158.0
+     Maharashtra          Belapur         PM10          134.0
+     Maharashtra           Nashik         PM10          107.0
+     Maharashtra      Navi Mumbai         PM10          102.0
+     Maharashtra      Navi Mumbai         PM10          129.0
+     Maharashtra           Mumbai         PM10          114.0
+     Maharashtra           Nagpur         PM10          122.0
+     Maharashtra Pimpri-Chinchwad         PM10          121.0
+     Maharashtra Pimpri-Chinchwad         PM10          130.0
+     Maharashtra             Pune         PM10          118.0
+     Maharashtra             Pune        PM2.5          103.0
+     Maharashtra            Thane         PM10          114.0
+     Maharashtra          Jalgaon         PM10          101.0
+     Maharashtra           Mumbai         PM10          111.0
+     Maharashtra           Mumbai        PM2.5          124.0
+          Odisha          Talcher        PM2.5          193.0
+          Punjab         Ludhiana        PM2.5          170.0
+          Punjab Mandi Gobindgarh        PM2.5          109.0
+       Rajasthan            Bundi        PM2.5          130.0
+       Rajasthan      Chittorgarh         PM10          159.0
+       Rajasthan        Khairthal           CO          124.0
+       Rajasthan             Kota        PM2.5          126.0
+       Rajasthan            Sikar         PM10          103.0
+       Rajasthan   Sri Ganganagar         PM10          156.0
+     West Bengal           Howrah         PM10          108.0
+   Uttar Pradesh         Varanasi        PM2.5          131.0
+   Uttar Pradesh          Lucknow         PM10          110.0
+   Uttar Pradesh          Lucknow         PM10          101.0
+   Uttar Pradesh         Bareilly         PM10          201.0
+   Uttar Pradesh   Fatehpur Sikri         PM10          135.0
+   Uttar Pradesh         Gajraula         PM10          219.0
+   Uttar Pradesh             Agra         PM10          110.0
+   Uttar Pradesh           Baraut        PM2.5          335.0
+   Uttar Pradesh        Gorakhpur        PM2.5          198.0
+   Uttar Pradesh        Gorakhpur         PM10          111.0
+   Uttar Pradesh    Greater Noida         PM10          156.0
+   Uttar Pradesh    Greater Noida        PM2.5          133.0
+   Uttar Pradesh           Kanpur        PM2.5          163.0
+   Uttar Pradesh           Kanpur         PM10          139.0
+   Uttar Pradesh            Noida         PM10          144.0
+   Uttar Pradesh            Noida         PM10          220.0
+   Uttar Pradesh            Noida        PM2.5          123.0
+   Uttar Pradesh        Modinagar         PM10          159.0
+   Uttar Pradesh        Moradabad        PM2.5          117.0
+   Uttar Pradesh        Moradabad         PM10          111.0
+       Telangana        Hyderabad         PM10          118.0
+     West Bengal          Kolkata        PM2.5          145.0
+           Bihar          Sasaram        PM2.5          142.0
+  Andhra Pradesh    Visakhapatnam        PM2.5          171.0
+           Assam         Guwahati        PM2.5          130.0
+           Bihar             Gaya         PM10          157.0
+           Delhi            Delhi        PM2.5          212.0
+           Delhi            Delhi        PM2.5          181.0
+         Gujarat            Surat         PM10          118.0
+           Delhi            Delhi         PM10          119.0
+           Delhi            Delhi           CO          117.0
+           Delhi            Delhi        PM2.5          104.0
+           Delhi            Delhi        PM2.5          239.0
+           Delhi            Delhi        PM2.5          154.0
+           Delhi            Delhi        PM2.5          182.0
+           Delhi            Delhi         PM10          158.0
+           Delhi            Delhi        PM2.5          108.0
+           Delhi            Delhi         PM10          144.0
+           Delhi            Delhi         PM10          169.0
+           Delhi            Delhi         PM10          138.0
+           Delhi            Delhi        PM2.5          262.0
+           Delhi            Delhi         PM10          192.0
+           Delhi            Delhi           CO          105.0
+         Gujarat        Ahmedabad        PM2.5          157.0
+         Gujarat      Gandhinagar         PM10          151.0
+           Delhi            Delhi        PM2.5          162.0
+           Delhi            Delhi           CO          115.0
+  Madhya Pradesh            Dewas          NO2          113.0
+  Madhya Pradesh          Gwalior        PM2.5          180.0
+  Madhya Pradesh          Gwalior        PM2.5          112.0
+  Madhya Pradesh           Indore        PM2.5          116.0
+         Haryana             Jind         PM10          117.0
+         Haryana           Karnal        PM2.5          201.0
+         Haryana      Kurukshetra        PM2.5          237.0
+  Madhya Pradesh            Katni        PM2.5          123.0
+         Haryana        Dharuhera        PM2.5          144.0
+         Haryana        Faridabad         PM10          144.0
+     Maharashtra           Satara         PM10          151.0
+     Maharashtra           Nashik         PM10          101.0
+     Maharashtra           Nashik         PM10          111.0
+     Maharashtra            Mahad         PM10          110.0
+     Maharashtra         Malegaon         PM10          136.0
+     Maharashtra           Mumbai         PM10          127.0
+     Maharashtra       Aurangabad        PM2.5          115.0
+     Maharashtra          Hingoli         PM10          124.0
+     Maharashtra          Hingoli        OZONE          108.0
+     Maharashtra Pimpri-Chinchwad         PM10          135.0
+     Maharashtra             Pune        PM2.5          125.0
+     Maharashtra             Pune        PM2.5          123.0
+     Maharashtra           Mumbai         PM10          120.0
+     Maharashtra           Mumbai        PM2.5          162.0
+     Maharashtra           Mumbai         PM10          114.0
+     Maharashtra           Mumbai        PM2.5          150.0
+     Maharashtra           Mumbai         PM10          155.0
+          Punjab Mandi Gobindgarh         PM10          122.0
+          Punjab          Patiala        PM2.5          133.0
+          Punjab          Patiala         PM10          124.0
+       Rajasthan            Baran         PM10          125.0
+       Rajasthan         Bhilwara         PM10          112.0
+       Rajasthan          Bhiwadi         PM10          131.0
+       Rajasthan          Jodhpur         PM10          176.0
+       Rajasthan        Khairthal        PM2.5          120.0
+       Rajasthan             Kota         PM10          118.0
+          Odisha          Talcher         PM10          164.0
+          Punjab         Bathinda         PM10          114.0
+          Punjab        Jalandhar        PM2.5          126.0
+       Rajasthan           Jalore         PM10          116.0
+       Rajasthan           Jaipur         PM10          109.0
+       Rajasthan   Sawai Madhopur         PM10          156.0
+   Uttar Pradesh           Meerut         PM10          228.0
+   Uttar Pradesh        Moradabad         PM10          115.0
+   Uttar Pradesh        Moradabad         PM10          124.0
+   Uttar Pradesh        Moradabad        PM2.5          237.0
+   Uttar Pradesh        Moradabad         PM10          112.0
+   Uttar Pradesh        Moradabad         PM10          111.0
+   Uttar Pradesh    Muzaffarnagar        PM2.5          244.0
+   Uttar Pradesh           Kanpur         PM10          129.0
+   Uttar Pradesh          Lucknow        PM2.5          165.0
+   Uttar Pradesh          Lucknow        PM2.5          149.0
+   Uttar Pradesh          Lucknow        PM2.5          129.0
+   Uttar Pradesh          Mathura        PM2.5          111.0
+         Tripura         Agartala         PM10          153.0
+     West Bengal      Barrackpore        PM2.5          101.0
+     West Bengal           Haldia         PM10          105.0
+     West Bengal           Howrah        PM2.5          126.0
+     West Bengal           Howrah         PM10          102.0
+   Uttar Pradesh        Ghaziabad        PM2.5          179.0
+   Uttar Pradesh        Ghaziabad           CO          113.0
+   Uttar Pradesh           Kanpur        PM2.5          149.0
+   Uttar Pradesh         Gajraula           CO          109.0
+   Uttar Pradesh        Ghaziabad        PM2.5          263.0
+   Uttar Pradesh        Ghaziabad           CO          113.0
+   Uttar Pradesh            Noida         PM10          144.0
+   Uttar Pradesh         Varanasi         PM10          119.0
+   Uttar Pradesh        Vrindavan        OZONE          104.0
+
+10. Average pollutant_avg by state and pollutant
+state              pollutant_id
+Andhra Pradesh     CO               34.29
+                   NH3               4.94
+                   NO2              30.94
+                   OZONE            29.29
+                   PM10             74.88
+                   PM2.5            66.76
+                   SO2              14.47
+Arunachal Pradesh  CO                9.00
+                   NH3               1.00
+                   NO2               8.00
+                   OZONE             7.00
+                   PM10             56.00
+                   PM2.5            50.00
+                   SO2              11.00
+Assam              CO               33.33
+                   NH3               2.44
+                   NO2               9.62
+                   OZONE            19.11
+                   PM10             55.56
+                   PM2.5            59.00
+                   SO2              21.78
+Bihar              CO               36.66
+                   NH3               3.27
+                   NO2              12.56
+                   OZONE            26.21
+                   PM10             75.58
+                   PM2.5            65.76
+                   SO2              14.52
+Chandigarh         CO               19.00
+                   NH3               7.00
+                   NO2              32.00
+                   OZONE            23.00
+                   PM10             62.00
+                   PM2.5            49.00
+                   SO2               5.00
+Chhattisgarh       CO               25.62
+                   NH3               2.45
+                   NO2              26.36
+                   OZONE            20.33
+                   PM10             66.58
+                   PM2.5            47.00
+                   SO2              11.25
+Delhi              CO               66.55
+                   NH3               6.98
+                   NO2              58.62
+                   OZONE            41.12
+                   PM10            172.53
+                   PM2.5           169.84
+                   SO2              14.80
+Gujarat            CO               49.89
+                   NH3               7.18
+                   NO2              40.42
+                   OZONE            32.53
+                   PM10            144.42
+                   PM2.5           132.95
+                   SO2              21.42
+Haryana            CO               34.79
+                   NH3               8.05
+                   NO2              22.12
+                   OZONE            29.10
+                   PM10            131.82
+                   PM2.5           128.92
+                   SO2              14.90
+Himachal Pradesh   CO               92.00
+                   NH3               2.00
+                   NO2              14.00
+                   OZONE            90.00
+                   PM10            106.00
+                   PM2.5            95.00
+                   SO2                NaN
+Jammu and Kashmir  CO               12.00
+                   NH3               9.00
+                   NO2              19.00
+                   OZONE             0.00
+                   PM10             25.00
+                   PM2.5            16.00
+                   SO2               3.00
+Jharkhand          CO               35.50
+                   NH3               3.00
+                   NO2              51.00
+                   OZONE            17.00
+                   PM10             98.00
+                   PM2.5            67.00
+                   SO2                NaN
+Karnataka          CO               30.58
+                   NH3               2.73
+                   NO2              17.00
+                   OZONE            21.25
+                   PM10             45.83
+                   PM2.5            30.50
+                   SO2              11.58
+Kerala             CO               17.20
+                   NH3               0.50
+                   NO2               6.75
+                   OZONE            26.20
+                   PM10             43.75
+                   PM2.5            31.67
+                   SO2               6.50
+Ladakh             CO                1.00
+                   NH3                NaN
+                   NO2                NaN
+                   OZONE            82.00
+                   PM10               NaN
+                   PM2.5              NaN
+                   SO2              15.00
+Madhya Pradesh     CO               38.30
+                   NH3               5.50
+                   NO2              50.68
+                   OZONE            45.62
+                   PM10            112.57
+                   PM2.5           104.14
+                   SO2              18.90
+Maharashtra        CO               37.65
+                   NH3               4.62
+                   NO2              32.09
+                   OZONE            37.87
+                   PM10            109.65
+                   PM2.5            99.63
+                   SO2              11.92
+Meghalaya          CO               18.00
+                   NH3               3.67
+                   NO2               0.00
+                   OZONE            29.00
+                   PM10             70.33
+                   PM2.5           174.00
+                   SO2               7.33
+Mizoram            CO                3.00
+                   NH3               0.00
+                   NO2               1.00
+                   OZONE             2.00
+                   PM10             28.00
+                   PM2.5              NaN
+                   SO2               9.00
+Nagaland           CO                4.00
+                   NH3                NaN
+                   NO2                NaN
+                   OZONE             1.00
+                   PM10             25.00
+                   PM2.5            27.00
+                   SO2              68.00
+Odisha             CO               35.30
+                   NH3               3.72
+                   NO2              18.05
+                   OZONE            48.28
+                   PM10             85.55
+                   PM2.5            69.50
+                   SO2              18.32
+Puducherry         CO               29.00
+                   NH3               2.00
+                   NO2              13.00
+                   OZONE            36.00
+                   PM10             15.00
+                   PM2.5            15.00
+                   SO2               6.00
+Punjab             CO               44.50
+                   NH3               5.67
+                   NO2              27.25
+                   OZONE            40.17
+                   PM10            102.00
+                   PM2.5           107.25
+                   SO2              12.50
+Rajasthan          CO               33.52
+                   NH3               7.69
+                   NO2              34.10
+                   OZONE            58.67
+                   PM10            116.60
+                   PM2.5            83.15
+                   SO2               8.28
+Sikkim             CO                3.00
+                   NH3               1.00
+                   NO2               8.00
+                   OZONE             2.00
+                   PM10             21.00
+                   PM2.5            24.00
+                   SO2               1.00
+Tamil Nadu         CO               33.86
+                   NH3               4.25
+                   NO2              14.30
+                   OZONE            32.50
+                   PM10             63.62
+                   PM2.5            37.33
+                   SO2               7.80
+Telangana          CO               29.93
+                   NH3               3.08
+                   NO2              14.77
+                   OZONE            19.79
+                   PM10             76.33
+                   PM2.5            63.23
+                   SO2              10.08
+Tripura            CO               39.00
+                   NH3                NaN
+                   NO2              11.00
+                   OZONE            11.00
+                   PM10            153.00
+                   PM2.5           119.00
+                   SO2              22.00
+Uttar Pradesh      CO               44.58
+                   NH3               6.07
+                   NO2              34.30
+                   OZONE            29.42
+                   PM10            138.48
+                   PM2.5           148.27
+                   SO2              21.61
+Uttarakhand        CO               25.00
+                   NH3               7.00
+                   NO2               5.50
+                   OZONE            25.50
+                   PM10             63.00
+                   PM2.5            58.00
+                   SO2               2.00
+West Bengal        CO               38.91
+                   NH3               6.95
+                   NO2              29.09
+                   OZONE            33.91
+                   PM10             94.05
+                   PM2.5            97.14
+                   SO2              12.50
+
