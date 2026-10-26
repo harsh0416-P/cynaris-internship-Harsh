@@ -1,0 +1,5 @@
+MANUAL PANDAS RESULTS
+
+record_count: 3752
+missing_values: {'country': 0, 'state': 0, 'city': 0, 'station': 0, 'last_update': 0, 'latitude': 0, 'longitude': 0, 'pollutant_id': 0, 'pollutant_min': 308, 'pollutant_max': 308, 'pollutant_avg': 308}
+average_by_pollutant: {'CO': 39.81, 'NH3': 5.37, 'NO2': 31.44, 'OZONE': 35.24, 'PM10': 110.07, 'PM2.5': 101.97, 'SO2': 14.49}

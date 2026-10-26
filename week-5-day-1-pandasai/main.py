@@ -6,85 +6,67 @@ import pandas as pd
 from pandasai import SmartDataframe
 from pandasai.llm.local_llm import LocalLLM
 
+# Project settings
 BASE_DIR = Path(__file__).resolve().parent
 DATA_FILE = BASE_DIR / "data" / "indian_air_quality.csv"
-LOG_FILE = BASE_DIR / "error_log.txt"
+MODEL_NAME = "llama3.2:1b"
+API_BASE = "http://localhost:11434/v1"
 
 logging.basicConfig(
-    filename=LOG_FILE,
+    filename=BASE_DIR / "error_log.txt",
     level=logging.ERROR,
-    format="%(asctime)s %(levelname)s %(message)s",
+    format="%(asctime)s - %(levelname)s - %(message)s",
 )
 
-QUESTIONS = [
-    "How many records are in this dataset?",
-    "Which states are represented?",
-    "How many unique cities are represented?",
-    "What are the counts of each pollutant type?",
-    "What is the average pollutant_avg across all records?",
-    "Which five cities have the highest average pollutant_avg?",
-    "What is the average pollutant_avg for each pollutant_id?",
-    "Are there any missing values in the dataset?",
-    "Which records have pollutant_avg greater than 100?",
-    "Summarize the air quality data by state and pollutant.",
-]
-
-
 def main():
-    if not DATA_FILE.exists() or DATA_FILE.stat().st_size == 0:
-        print(f"CSV missing or empty: {DATA_FILE}")
+    print("\n=== PandasAI Air Quality Assistant ===")
+
+    if not DATA_FILE.exists():
+        print(f"Dataset not found: {DATA_FILE}")
         return
 
+    df = pd.read_csv(DATA_FILE)
+    print(f"Dataset loaded: {len(df)} rows, {len(df.columns)} columns")
+
     try:
-        df = pd.read_csv(DATA_FILE)
-        required = {
-            "state", "city", "pollutant_id",
-            "pollutant_min", "pollutant_max", "pollutant_avg"
-        }
-        missing = required - set(df.columns)
-        if missing:
-            raise ValueError(f"Missing expected columns: {sorted(missing)}")
-
-        print("Dataset loaded successfully")
-        print("Shape:", df.shape)
-        print("\nColumns:", df.columns.tolist())
-        print("\nMissing values:\n", df.isna().sum())
-        print("\nExact duplicate rows:", df.duplicated().sum())
-
-        # Manual Pandas answers for comparison
-        manual = {
-            "record_count": len(df),
-            "missing_values": df.isna().sum().to_dict(),
-            "average_by_pollutant": (
-                df.groupby("pollutant_id")["pollutant_avg"]
-                .mean().round(2).to_dict()
-            ),
-        }
-
-        print("\nMANUAL PANDAS RESULTS")
-        for name, result in manual.items():
-            print(f"{name}: {result}")
-
-        # Requires Ollama running locally with llama3 downloaded.
         llm = LocalLLM(
-            api_base="http://localhost:11434/v1",
-            model="llama3",
+            api_base=API_BASE,
+            model=MODEL_NAME,
         )
+
         sdf = SmartDataframe(df, config={"llm": llm})
 
-        print("\nPANDASAI RESULTS")
-        for i, question in enumerate(QUESTIONS, 1):
-            try:
-                result = sdf.chat(question)
-                print(f"\n{i}. {question}\nResult: {result}")
-            except Exception as exc:
-                logging.exception("PandasAI query failed: %s", question)
-                print(f"\n{i}. Query failed. Details saved to error_log.txt")
+    except Exception as exc:
+        logging.exception("Failed to initialize PandasAI")
+        print(f"Could not initialize PandasAI: {exc}")
+        return
 
-    except Exception:
-        logging.exception("Dataset or initialization failure")
-        print("An error occurred. Check error_log.txt")
+    print("\nType a question about the dataset.")
+    print("Type 'exit' to quit.")
+    print("Example: How many rows are present in this dataset?")
 
+    while True:
+        question = input("\nYour question: ").strip()
+
+        if question.lower() in {"exit", "quit"}:
+            print("Goodbye!")
+            break
+
+        if not question:
+            continue
+
+        try:
+            answer = sdf.chat(question)
+            print("\nAI answer:")
+            print(answer)
+
+        except Exception as exc:
+            logging.exception("PandasAI query failed: %s", question)
+            print(f"\nPandasAI could not answer: {exc}")
+            print(
+                "Try a simpler question, or use reliable_analysis.py "
+                "for reproducible Pandas results."
+            )
 
 if __name__ == "__main__":
     main()
