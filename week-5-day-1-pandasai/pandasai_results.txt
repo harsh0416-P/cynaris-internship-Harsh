@@ -1,0 +1,72 @@
+PANDASAI NATURAL-LANGUAGE QUERY RESULTS
+
+
+1. How many records are in this dataset?
+Result: Unfortunately, I was not able to answer your question, because of the following error:
+
+No code found in the response
+
+Time: 17.3 seconds
+
+2. Which states are represented?
+Result: Unfortunately, I was not able to answer your question, because of the following error:
+
+No code found in the response
+
+Time: 7.6 seconds
+
+3. How many unique cities are represented?
+Result: Unfortunately, I was not able to answer your question, because of the following error:
+
+No code found in the response
+
+Time: 23.6 seconds
+
+4. What are the counts of each pollutant type?
+Result: Unfortunately, I was not able to answer your question, because of the following error:
+
+No code found in the response
+
+Time: 22.3 seconds
+
+5. What is the average pollutant_avg across all records?
+Result: Unfortunately, I was not able to answer your question, because of the following error:
+
+No code found in the response
+
+Time: 10.8 seconds
+
+6. Which five cities have the highest average pollutant_avg?
+Result: Unfortunately, I was not able to answer your question, because of the following error:
+
+No code found in the response
+
+Time: 15.1 seconds
+
+7. What is the average pollutant_avg for each pollutant_id?
+Result: Unfortunately, I was not able to answer your question, because of the following error:
+
+No code found in the response
+
+Time: 12.9 seconds
+
+8. Are there any missing values in the dataset?
+Result: Unfortunately, I was not able to answer your question, because of the following error:
+
+No code found in the response
+
+Time: 18.9 seconds
+
+9. Which records have pollutant_avg greater than 100?
+Result: Unfortunately, I was not able to answer your question, because of the following error:
+
+`axis` must be fewer than the number of dimensions (1)
+
+Time: 31.8 seconds
+
+10. Summarize the air quality data by state and pollutant.
+Result: Unfortunately, I was not able to answer your question, because of the following error:
+
+No code found in the response
+
+Time: 28.2 seconds
