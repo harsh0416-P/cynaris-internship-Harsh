@@ -1,0 +1,8 @@
+@"
+pandas
+autoviz
+sweetviz
+matplotlib
+seaborn
+IPython
+"@ | Set-Content requirements.txt
