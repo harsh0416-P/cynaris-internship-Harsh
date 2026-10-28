@@ -1,0 +1,6 @@
+Operation,DuckDB_seconds,Pandas_seconds,Polars_seconds,Validation
+Total Sales,0.089076,0.000413,0.001384,PASS
+Sales by City,0.073269,0.036263,0.006524,PASS
+Sales by Category,0.094151,0.007433,0.002613,PASS
+High Value Sales,0.076496,0.000419,0.001401,PASS
+Top Products,0.089738,0.01315,0.002413,PASS
