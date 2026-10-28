@@ -44,3 +44,6 @@ All five analytical operations passed cross-library validation in the recorded r
 
 ## Benchmark Notes
 The initial timings are illustrative rather than a definitive performance ranking. DuckDB queries the CSV through a view, while Pandas and Polars load the CSV into DataFrames before the operations. Repeatable, equivalent end-to-end tests are needed for a fair comparison.
+
+## Execution Results
+All five analytical queries passed validation across DuckDB, Pandas, and Polars. Benchmark timings are recorded in benchmark_results.csv.
