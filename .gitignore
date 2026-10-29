@@ -1,0 +1,42 @@
+@"
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+.env
+.env.*
+
+# Logs
+*.log
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# IDE files
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+"@ | Set-Content -Encoding utf8 .gitignore
+
+@"
+
+# Generated visualization files
+week-5-day-2-autoviz-sweetviz/*_files/
+week-5-day-2-autoviz-sweetviz/Panel*.html
+week-5-day-2-autoviz-sweetviz/plot.html
+week-5-day-2-autoviz-sweetviz/standerd.html
+week-5-day-2-autoviz-sweetviz/sweetviz_report.html
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Exclude Week 5 Day 5 from this upload
+week-5-day-5-ai-eda/
+"@ | Add-Content -Encoding utf8 .gitignore
