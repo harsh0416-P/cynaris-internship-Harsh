@@ -1,0 +1,21 @@
+{
+  "row_count": 100000,
+  "column_count": 6,
+  "duplicate_rows": 0,
+  "missing_values": {
+    "sale_id": 0,
+    "city": 0,
+    "category": 0,
+    "product": 0,
+    "quantity": 0,
+    "amount": 0
+  },
+  "data_types": {
+    "sale_id": "int64",
+    "city": "object",
+    "category": "object",
+    "product": "object",
+    "quantity": "int64",
+    "amount": "int64"
+  }
+}
