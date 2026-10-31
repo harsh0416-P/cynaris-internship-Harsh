@@ -1,0 +1,14 @@
+# Python environment and cache
+.venv/
+__pycache__/
+*.py[cod]
+
+# Sensitive/local database backups
+data/sales_code_backup.txt
+data/sales_old.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
