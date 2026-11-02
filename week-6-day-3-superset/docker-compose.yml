@@ -1,0 +1,33 @@
+﻿services:
+  superset:
+    image: apache/superset:latest
+    container_name: cynaris-superset
+    ports:
+      - "8088:8088"
+    environment:
+      SUPERSET_CONFIG_PATH: /app/superset_config.py
+      SUPERSET_SECRET_KEY: "cynaris-w6d3-local-secret-key-change-before-production"
+      ADMIN_USERNAME: admin
+      ADMIN_FIRST_NAME: Harsh
+      ADMIN_LAST_NAME: Sanchaniya
+      ADMIN_EMAIL: admin@example.com
+      ADMIN_PASSWORD: Superset@123
+    command: >
+      /bin/sh -c "
+      superset db upgrade &&
+      superset fab create-admin
+      --username admin
+      --firstname Harsh
+      --lastname Sanchaniya
+      --email admin@example.com
+      --password Superset@123 || true;
+      superset init;
+      superset run -h 0.0.0.0 -p 8088
+      "
+    volumes:
+      - ./superset_config.py:/app/superset_config.py:ro
+      - superset_home:/app/superset_home
+      - ../week-6-day-1-vanna/data:/app/sales-data:ro
+
+volumes:
+  superset_home:
