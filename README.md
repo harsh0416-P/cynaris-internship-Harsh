@@ -1,48 +1,192 @@
-# Cynaris Data Analyst Internship
+# 🚀 Data Analytics Internship — Cynaris Solutions
 
-This repository documents my practical learning journey through the Data Analyst Internship at Cynaris Solutions Private Limited. It includes SQL exercises, Python programming, data cleaning, data visualisation, Power BI, Excel analysis, statistics, data governance, and an end-to-end sales analysis capstone.
+<p align="center">
+  <img src="https://img.shields.io/badge/Internship-Data%20Analytics-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Duration-3%20Months-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Focus-Data%20%7C%20AI%20%7C%20SQL-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-In%20Progress-yellow?style=for-the-badge" />
+</p>
 
-## Internship Overview
+## 👋 About This Repository
 
-- **Role:** Data Analyst Intern
-- **Organisation:** Cynaris Solutions Private Limited
-- **Focus:** Data analysis, business intelligence, reporting, and statistics
-- **Languages:** SQL and Python
-- **Tools:** VS Code, Jupyter Notebook, Git, GitHub, Power BI, Excel, and Looker Studio
+Welcome to my **Data Analytics Internship Repository** at **Cynaris Solutions Private Limited, Bengaluru**.
 
-## Skills and Technologies
+I am pursuing an MSc in Data Science and using this internship to develop practical skills in data analytics, database management, Python programming, data visualization, statistical analysis and AI-powered data applications.
 
-| Category | Skills and Tools |
+This repository documents my complete internship journey, including daily assignments, practical implementations, datasets, SQL queries, Python scripts, analytical reports and projects.
+
+My goal is not just to complete assignments but to understand how real-world data problems are solved using analytical and AI technologies.
+
+---
+
+## 🎯 Internship Objectives
+
+- Develop strong SQL and database management skills.
+- Perform data cleaning, transformation and exploratory data analysis.
+- Work with Python libraries for data analytics.
+- Build meaningful data visualizations and dashboards.
+- Understand statistical analysis and predictive modeling.
+- Explore AI-powered analytics and Natural Language to SQL.
+- Learn Git and GitHub collaboration workflows.
+- Develop practical projects suitable for real-world applications.
+
+---
+
+## 🛠️ Technical Skills & Technologies
+
+| Category | Technologies |
 |---|---|
-| SQL | SELECT, WHERE, JOINs, aggregations, subqueries, CTEs |
-| Python | Python fundamentals, Pandas, NumPy |
-| Data Cleaning | Missing values, duplicate detection, data types |
-| Visualisation | Matplotlib, Seaborn |
-| Business Intelligence | Power BI, DAX, Looker Studio |
-| Spreadsheet Analysis | Excel analysis and KPIs |
-| Statistics | Descriptive statistics, probability, hypothesis testing |
-| Machine Learning Foundations | Linear regression and model evaluation |
-| Data Governance | Data validation, data contracts, Great Expectations |
-| Reporting | Dashboards, executive summaries, business recommendations |
+| Programming | Python |
+| Database | SQL, SQLite, DuckDB |
+| Data Analysis | Pandas, NumPy, Polars |
+| Visualization | Matplotlib, Seaborn |
+| Automated EDA | AutoViz, SweetViz |
+| AI & LLM | Vanna, PandasAI, Ollama |
+| API Development | FastAPI |
+| Data Quality | Great Expectations |
+| BI & Reporting | Looker Studio |
+| Development Tools | VS Code, Jupyter Notebook |
+| Version Control | Git, GitHub |
 
-## Repository Structure
+---
+
+## 📚 Internship Learning Journey
+
+### Week 1 — SQL Fundamentals
+
+**Focus:** Understanding relational databases and writing SQL queries.
+
+Topics:
+- SQL fundamentals
+- SELECT, WHERE and filtering
+- SQL JOIN operations
+- GROUP BY and HAVING
+- Subqueries and Common Table Expressions (CTEs)
+
+Practical work:
+- Created SQL databases and tables.
+- Practiced data retrieval and filtering.
+- Combined multiple tables using JOINs.
+- Performed aggregations and grouped analysis.
+- Exported query results into CSV files.
+
+### Week 2 — Python for Data Analytics
+
+**Focus:** Working with datasets using Python and analytical libraries.
+
+Topics:
+- Python for data analysis
+- Pandas fundamentals
+- Data visualization
+- Data governance
+- Data quality and validation
+
+Practical work:
+- Dataset exploration and manipulation.
+- Created charts using Matplotlib and Seaborn.
+- Implemented data quality checks.
+- Explored Great Expectations.
+- Generated validation reports and data quality scorecards.
+
+### Week 3 — Business Intelligence & Advanced Analytics
+
+**Focus:** Transforming data into meaningful business insights.
+
+Learning areas:
+- Excel-based data analysis
+- Data visualization and reporting
+- Looker Studio
+- KPI design
+- Business intelligence
+
+Practical work:
+- Excel data analysis.
+- Created visual reports.
+- Explored business performance metrics.
+- Designed KPI-focused analytical outputs.
+
+### Week 4 — Statistics & Predictive Analytics
+
+**Focus:** Applying statistical methods to understand data and relationships.
+
+Topics:
+- Descriptive statistics
+- Probability
+- Regression analysis
+- Hypothesis testing
+- Statistical interpretation
+
+Practical work:
+- Performed descriptive statistical analysis.
+- Explored probability concepts.
+- Built regression analysis workflows.
+- Practiced hypothesis testing.
+- Worked on a statistical capstone project.
+
+### Week 5 — Advanced Data Analytics & AI Tools
+
+**Focus:** Exploring modern analytical tools and AI-assisted workflows.
+
+Topics:
+- PandasAI
+- AutoViz and SweetViz
+- DuckDB
+- Polars
+- AI-powered exploratory data analysis
+
+Practical work:
+- Automated exploratory data analysis.
+- Generated visual reports.
+- Queried analytical datasets using DuckDB.
+- Compared data processing approaches.
+- Explored AI-assisted data analysis.
+- Documented analytical findings and validation results.
+
+### Week 6 — SQL Intelligence with Vanna & Superset
+
+**Focus:** Building AI-powered Natural Language to SQL applications.
+
+**Day 1 — Vanna Setup: NL to SQL on Real Database**
+
+- Configured Vanna 2.0.2 with Ollama.
+- Used the Llama 3.2:1b local language model.
+- Created a SQLite sales database.
+- Integrated Vanna with FastAPI.
+- Developed the `POST /cia/sql-analyst` endpoint.
+- Tested natural-language questions against the database.
+- Documented testing results and model limitations.
+
+**Day 2 — Vanna Training: Custom SQL Patterns**
+
+- Learning domain-specific question-to-SQL training.
+- Exploring custom SQL patterns and business rules.
+- Improving natural-language query generation.
+
+**Upcoming learning areas:**
+- Apache Superset integration.
+- AI-powered business intelligence.
+- Natural Language to SQL validation.
+
+*Week 6 activities are ongoing.*
+
+---
+
+## 📂 Repository Structure
 
 ```text
-Cynaris-Internship/
+cynaris-internship-Harsh/
 │
-├── sql week-1-day-1 complete/
-├── sql week-1-day-2complete/
-├── sql week-1-day-3complete/
-├── sql week-1-day-4complete/
-├── sql week-1-day-5complete/
+├── week-1-day-1-sql-fundamentals/
+├── week-1-day-2-sql-joins/
+├── week-1-day-3-sql-aggregations/
+├── week-1-day-4-sql-subqueries/
+├── week-1-day-5-python-pandas/
 │
 ├── week-2-day-1-visualisation/
-├── week-2-day-4-data-cleaning/
-├── week-2-day-5-numpy/
 ├── week-2-day-6-data-governance/
 │
-├── week-3-day-1-powerbi/
-├── week-3 – day 2-dax-Basics/
+├── week-3-day-1/
+├── week-3-day-2/
 ├── week-3-day-3-excel-analysis/
 ├── week-3-day-4-looker-studio/
 ├── week-3-day-5-kpi-design/
@@ -51,166 +195,101 @@ Cynaris-Internship/
 ├── week-4-day-2-probability/
 ├── week-4-day-3-regression/
 ├── week-4-day-4-hypothesis-testing/
-│
 ├── week-4-day-5-capstone/
-│   ├── data/
-│   │   └── sales.csv
-│   ├── outputs/
-│   │   ├── correlation_heatmap.png
-│   │   ├── monthly_sales_trend.png
-│   │   ├── sales_by_region.png
-│   │   ├── sales_distribution.png
-│   │   └── top_products.png
-│   ├── capstone_analysis.ipynb
-│   └── executive_summary.md
+│
+├── week-5-day-1-pandasai/
+├── week-5-day-2-autoviz-sweetviz/
+├── week-5-day-3-duckdb/
+├── week-5-day-4-polars/
+├── week-5-day-5-ai-eda/
+│
+├── week-6-day-1-vanna/
 │
 └── README.md
 ```
 
-*Note: The structure above reflects the folders reported in the terminal. The `.venv` environment folder is intentionally excluded.*
+*The directory names above represent the learning areas; the actual repository contains the implementation folders and files for completed work.*
 
-## Week 1 — SQL and Python Foundations
+---
 
-### Day 1: SQL Fundamentals
-- Practised retrieving data using SELECT.
-- Applied filtering conditions with WHERE.
-- Worked with AND, OR, NOT, LIKE, IN, BETWEEN, and IS NULL.
-- Saved SQL queries and exported query results.
+## 💻 Featured Project: Vanna SQL Analyst
 
-### Day 2: SQL Joins
-- Practised combining information from related tables.
-- Worked with INNER JOIN and other join concepts.
+**Week 6 Day 1 — Natural Language to SQL**
 
-### Day 3: SQL Aggregations
-- Practised aggregate functions such as COUNT, SUM, AVG, MIN, and MAX.
-- Used GROUP BY and HAVING to summarise records.
+Developed a local AI-powered SQL assistant that allows users to ask questions about sales data using natural language.
 
-### Day 4: SQL Subqueries and CTEs
-- Practised nested queries.
-- Used Common Table Expressions to structure analytical queries.
+**Architecture:**
 
-### Day 5: Python for Data
-- Began working with Pandas for data analysis.
-- Practised loading, inspecting, and manipulating datasets.
+- LLM: Ollama — Llama 3.2:1b
+- NL-to-SQL framework: Vanna 2.0.2
+- Database: SQLite
+- API: FastAPI
 
-## Week 2 — Data Preparation and Quality
+**API Endpoint:**
 
-### Day 1: Data Visualisation
-- Created visualisations using Matplotlib and Seaborn.
-- Practised histograms, bar charts, line charts, scatter plots, and box plots.
-- Saved charts for analysis and reporting.
+`POST /cia/sql-analyst`
 
-### Day 2 and Day 3
-- No corresponding folders were present in the supplied folder listing.
+**Key features:**
+- Natural-language question processing.
+- SQL generation and database execution.
+- Local LLM integration.
+- API-based interaction.
+- Documented testing and limitations.
 
-### Day 4: Data Cleaning
-- Worked on preparing datasets for analysis.
-- Focused on identifying and handling data quality issues.
+**Repository location:** `week-6-day-1-vanna/`
 
-### Day 5: NumPy
-- Practised numerical computing with NumPy.
-- Worked with arrays and numerical operations.
+---
 
-### Day 6: Data Governance
-- Explored data quality checks and data contracts.
-- Worked with Great Expectations for validation.
-- Generated validation reports and documented quality results.
+## 📈 What I Have Learned
 
-## Week 3 — Business Intelligence and Reporting
+Throughout this internship, I am developing the ability to:
 
-### Day 1: Power BI
-- Worked on Power BI and business intelligence concepts.
-- Focused on presenting data through reports and visualisations.
+- Work with structured and relational data.
+- Write SQL queries for analytical problems.
+- Clean, transform and explore datasets.
+- Perform statistical analysis.
+- Build visualizations and analytical reports.
+- Use Python libraries for data processing.
+- Explore AI-assisted analytics.
+- Connect language models with databases.
+- Build API-based analytical applications.
+- Maintain professional project documentation using Git and GitHub.
 
-### Day 2: DAX Basics
-- Explored Data Analysis Expressions (DAX).
-- Practised the foundations of calculations and measures in Power BI.
+---
 
-### Day 3: Excel Analysis
-- Worked on analysing data using Excel.
-- Focused on spreadsheet-based analysis and reporting.
+## 🚀 Future Learning Goals
 
-### Day 4: Looker Studio
-- Worked on building reports and dashboards in Looker Studio.
-- Explored visual presentation of business data.
+My long-term technical interests include:
 
-### Day 5: KPI Design
-- Explored Key Performance Indicators (KPIs).
-- Focused on selecting metrics to measure business performance.
+- Advanced Python and SQL.
+- Machine Learning and Deep Learning.
+- AI Engineering.
+- Large Language Models (LLMs).
+- Retrieval-Augmented Generation (RAG).
+- AI Agents and agentic workflows.
+- Production-ready AI applications.
 
-## Week 4 — Statistics and Analytical Methods
+I aim to combine my Data Science foundation with practical AI Engineering skills.
 
-### Day 1: Statistics
-- Worked on statistical concepts used in data analysis.
-- Practised summarising and interpreting data.
+---
 
-### Day 2: Probability
-- Explored probability concepts and their application in analytical problems.
-
-### Day 3: Regression Analysis
-- Explored correlations between variables.
-- Practised simple linear regression with Scikit-learn.
-- Evaluated model performance using R², MAE, and RMSE.
-- Examined residuals to understand prediction errors.
-
-### Day 4: Hypothesis Testing
-- Formulated null and alternative hypotheses.
-- Practised one-sample and two-sample t-tests using SciPy.
-- Interpreted p-values and confidence intervals.
-- Explored Type I and Type II errors.
-
-### Day 5: Data Analysis Capstone
-
-**Project:** Sales Forecasting and Business Insights
-
-**Objective:** Analyse sales data to identify patterns and communicate useful business findings.
-
-**Workflow:**
-1. Loaded the sales dataset using Pandas.
-2. Inspected dataset structure, missing values, and duplicate records.
-3. Standardised column names and converted date columns.
-4. Cleaned the data for analysis.
-5. Performed exploratory data analysis.
-6. Examined sales distribution, regional sales, product performance, and monthly trends.
-7. Generated a correlation heatmap.
-8. Prepared an executive summary with business recommendations.
-
-**Deliverables:**
-- `week-4-day-5-capstone/capstone_analysis.ipynb`
-- `week-4-day-5-capstone/data/sales.csv`
-- `week-4-day-5-capstone/executive_summary.md`
-
-**Visualisations:**
-- `sales_distribution.png`
-- `monthly_sales_trend.png`
-- `sales_by_region.png`
-- `top_products.png`
-- `correlation_heatmap.png`
-
-The five chart files are stored in the capstone's `outputs/` directory.
-
-## Key Learning Outcomes
-
-- Writing SQL queries to retrieve, combine, and aggregate data.
-- Using Python, Pandas, and NumPy for data preparation.
-- Creating charts to communicate data patterns.
-- Identifying missing values, duplicates, and validation issues.
-- Exploring Power BI, DAX, Excel, and Looker Studio.
-- Applying statistics, probability, regression, and hypothesis testing.
-- Designing business KPIs and communicating analytical findings.
-- Developing an end-to-end data analysis project.
-
-## Future Improvements
-
-- Continue developing interactive dashboards.
-- Add verified dashboard links and screenshots.
-- Expand project documentation with measured results.
-- Continue improving SQL, Python, statistics, and business communication.
-
-## Author
+## 👨‍💻 About Me
 
 **Harsh Sanchaniya**
 
-MSc Data Science Student | Aspiring Data Analyst | AI Enthusiast
+MSc Data Science Student | Data Analytics Intern | Aspiring AI Engineer
 
-This repository showcases my practical exercises, analytical projects, and progress in data analytics and business intelligence.
+Currently focused on developing practical skills in data analytics, Python, SQL and AI-powered applications.
+
+**GitHub:** [@harsh0416-P](https://github.com/harsh0416-P)
+
+---
+
+## ⭐ Final Note
+
+This repository represents my continuous learning, practical experimentation and professional development throughout my internship at Cynaris Solutions.
+
+Every folder reflects a learning milestone, every project represents a practical challenge, and every commit documents my progress.
+
+**Learn → Build → Analyze → Improve → Repeat.**
+
