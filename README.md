@@ -15,7 +15,7 @@ My goal was not just to complete assignments but to understand how real-world da
 - Develop strong SQL and database management skills.
 - Perform data cleaning, transformation and exploratory data analysis.
 - Work with Python libraries for data analytics.
-- Build meaningful data visualizations and reports.
+- Build meaningful data visualizations, dashboards and reports.
 - Understand statistical analysis and predictive modeling.
 - Explore AI-powered analytics and Natural Language to SQL.
 - Learn Git and GitHub workflows.
@@ -30,10 +30,10 @@ My goal was not just to complete assignments but to understand how real-world da
 | Data Analysis | Pandas, NumPy, Polars |
 | Visualization | Matplotlib, Seaborn |
 | Automated EDA | AutoViz, SweetViz, ydata-profiling |
-| AI & LLM | Vanna, PandasAI, Ollama |
+| AI & LLM | Vanna, PandasAI, Ollama (Llama 3.2) |
 | API Development | FastAPI |
 | Data Quality | Great Expectations |
-| BI & Reporting | Excel, Looker Studio |
+| BI & Reporting | Power BI (DAX), Excel, Looker Studio, Apache Superset |
 | Development Tools | VS Code, Jupyter Notebook |
 | Version Control | Git, GitHub |
 
@@ -43,11 +43,11 @@ My goal was not just to complete assignments but to understand how real-world da
 |---|---|---|
 | 1 | SQL Fundamentals | SQL, CSV exports |
 | 2 | Python for Data Analytics | Pandas, NumPy, Matplotlib, Seaborn, Great Expectations |
-| 3 | Business Intelligence & Reporting | Excel, Looker Studio |
+| 3 | Business Intelligence & Reporting | Power BI, DAX, Excel, Looker Studio |
 | 4 | Statistics & Predictive Analytics | Python, regression analysis |
 | 5 | Advanced Data Analytics & AI Tools | PandasAI, AutoViz, SweetViz, DuckDB, Polars |
-| 6 | AI-Powered Analytics | Vanna, Ollama, SQLite, FastAPI |
-| 7 | Automated EDA | ydata-profiling, SweetViz |
+| 6 | AI-Powered Analytics | Vanna, Ollama, SQLite, FastAPI, Superset |
+| 7 | PandasAI & Automated EDA | PandasAI, ydata-profiling, SweetViz |
 
 ## 📚 Internship Learning Journey
 
@@ -68,7 +68,7 @@ My goal was not just to complete assignments but to understand how real-world da
 
 **Focus:** Working with datasets using Python and analytical libraries.
 
-**Topics:** Pandas fundamentals · data cleaning and missing values · data visualization · data governance · data quality and validation
+**Topics:** Data visualization · data cleaning and missing values · NumPy · data governance · data quality and validation
 
 **Practical work:**
 - Explored and manipulated datasets with Pandas and NumPy.
@@ -81,28 +81,26 @@ My goal was not just to complete assignments but to understand how real-world da
 
 **Focus:** Turning data into business insights.
 
-**Topics:** Excel-based analysis · data visualization and reporting · Looker Studio · KPI design
+**Topics:** Power BI · DAX basics · Excel-based analysis · Looker Studio · KPI design
 
 **Practical work:**
+- Built Power BI work and practised DAX basics.
 - Analysed data in Excel.
-- Created visual reports.
-- Explored business performance metrics.
+- Created visual reports in Looker Studio.
 - Designed KPI-focused analytical outputs.
-
-<!-- Verify: your internship brief also mentions a Power BI sales dashboard for Week 3. If you built one, add it here. -->
 
 ### Week 4 — Statistics & Predictive Analytics
 
 **Focus:** Applying statistical methods to understand data and relationships.
 
-**Topics:** Descriptive statistics · probability · regression analysis · hypothesis testing · statistical interpretation
+**Topics:** Descriptive statistics · probability · regression analysis · hypothesis testing
 
 **Practical work:**
 - Performed descriptive statistical analysis.
 - Explored probability concepts.
 - Built regression analysis workflows.
 - Practised hypothesis testing.
-- Completed a statistical capstone project on a sales dataset.
+- Completed a statistical capstone project.
 
 ### Week 5 — Advanced Data Analytics & AI Tools
 
@@ -116,26 +114,39 @@ My goal was not just to complete assignments but to understand how real-world da
 - **Performance comparison:** benchmarked five analytical operations across Pandas, Polars and DuckDB on a 100,000-row sales dataset and validated that the results matched.
 - Explored AI-assisted data analysis and documented findings.
 
-### Week 6 — AI-Powered Analytics with Vanna
+### Week 6 — AI-Powered Analytics
 
-**Focus:** Building AI-powered Natural Language to SQL applications.
+**Focus:** Building AI-powered Natural Language to SQL applications and reporting.
 
-**Practical work:**
+**Day 1 — Vanna setup (NL to SQL on a real database)**
 - Configured Vanna 2.0.2 with Ollama and the Llama 3.2:1b local language model.
 - Created a SQLite sales database and integrated Vanna with FastAPI.
 - Developed the `POST /cia/sql-analyst` endpoint.
-- Ran natural-language questions against the database, verified database operations and exported query results.
-- Explored custom question-to-SQL training and documented testing results and model limitations.
+- Tested natural-language questions and documented results and model limitations.
 
-### Week 7 — Automated EDA (CIA Auto EDA)
+**Day 2 — Vanna training:** custom question-to-SQL training and business rules.
 
-**Focus:** Automating exploratory data analysis and validating the outputs.
+**Day 3 — Apache Superset:** Superset for BI and dashboards.
 
-**Practical work:**
-- Used **ydata-profiling** and **SweetViz** on a **9,800-row, 18-column** sales dataset.
-- Generated **two HTML reports**.
-- Created automation scripts and validation scripts.
-- Documented the outputs.
+**Day 4 — Executive reporting.**
+
+**Day 5 — Natural-language SQL dashboard.**
+
+<!-- Verify: add one or two real lines for Days 3 to 5 from those folders' own READMEs. -->
+
+### Week 7 — PandasAI & Automated EDA
+
+**Day 1 — CSV upload and PandasAI queries**
+- Explored natural-language data analysis with PandasAI 2.3.2, Pandas and a locally hosted Llama 3.2 3B model through Ollama (Python 3.11).
+- Dataset: `data/sales.csv`, 9,800 rows and 18 columns (US Superstore practice dataset).
+
+**Day 2 — CIA Auto EDA**
+- Used **ydata-profiling** and **SweetViz** on the 9,800-row, 18-column sales dataset.
+- Generated **two HTML reports**: `profile_report.html` and `sweetviz_report.html`.
+- Created automation (`run_eda.py`) and validation (`validate_reports.py`) scripts.
+- Saved report snapshots in `docs/` and documented the outputs.
+
+> **Dataset note:** the Week 7 data is a substitute practice dataset (US Superstore), not the Indian business dataset named in the internship lesson. Mentor confirmation was pending when this was written.
 
 ## 💻 Featured Projects
 
@@ -143,23 +154,19 @@ My goal was not just to complete assignments but to understand how real-world da
 
 A local AI-powered SQL assistant that lets users ask questions about sales data in natural language.
 
-**Architecture:**
-- LLM: Ollama, Llama 3.2:1b
-- NL-to-SQL framework: Vanna 2.0.2
-- Database: SQLite
-- API: FastAPI (`POST /cia/sql-analyst`)
-
-**Key features:** natural-language question processing, SQL generation and database execution, local LLM integration, API-based interaction, documented testing and limitations.
-
-**Location:** `week-6-day-1-vanna/`
+- **LLM:** Ollama, Llama 3.2:1b
+- **NL-to-SQL framework:** Vanna 2.0.2
+- **Database:** SQLite
+- **API:** FastAPI (`POST /cia/sql-analyst`)
+- **Key features:** natural-language question processing, SQL generation and execution, local LLM integration, API-based interaction, documented testing and limitations.
 
 ### CIA Auto EDA (Week 7)
 
 An automated EDA pipeline that profiles a sales dataset and produces shareable reports.
 
-**Inputs and outputs:** 9,800 rows × 18 columns in, two HTML reports out (ydata-profiling and SweetViz).
-
-**Key features:** automation scripts, validation scripts, documented outputs.
+- **Input:** 9,800 rows × 18 columns
+- **Output:** two HTML reports (ydata-profiling and SweetViz)
+- **Key features:** automation script, validation script, report snapshots, requirements file and documentation.
 
 ### Pandas vs Polars vs DuckDB Benchmark (Week 5)
 
@@ -170,17 +177,20 @@ A performance comparison of five analytical operations on a 100,000-row sales da
 ```
 cynaris-internship-Harsh/
 │
-├── week-1-day-1-sql-fundamentals/
-├── week-1-day-2-sql-joins/
-├── week-1-day-3-sql-aggregations/
-├── week-1-day-4-sql-subqueries/
-├── week-1-day-5-python-pandas/
+├── project 1 Stakeholder brief + data inven…/
+│
+├── sql week-1-day-1 complete/
+├── sql week-1-day-3complete/
+├── sql week-1-day-4complete/
+├── sql week-1-day-5complete/
 │
 ├── week-2-day-1-visualisation/
+├── week-2-day-4-data-cleaning/
+├── week-2-day-5-numpy/
 ├── week-2-day-6-data-governance/
 │
-├── week-3-day-1/
-├── week-3-day-2/
+├── week-3 – day 2-dax-Basics/
+├── week-3-day-1-powerbi/
 ├── week-3-day-3-excel-analysis/
 ├── week-3-day-4-looker-studio/
 ├── week-3-day-5-kpi-design/
@@ -198,11 +208,29 @@ cynaris-internship-Harsh/
 ├── week-5-day-5-ai-eda/
 │
 ├── week-6-day-1-vanna/
+├── week-6-day-2-vanna-training/
+├── week-6-day-3-superset/
+├── week-6-day-4-executive-reporting/
+├── week-6-day-5-nl-sql-dashboard/
 │
+├── week-7-day-1-pandasai/
+├── week-7-day-2-auto-eda/
+│   ├── data/sales.csv
+│   ├── docs/
+│   │   ├── profile_snapshot.png
+│   │   └── sweetviz_snapshot.png
+│   ├── reports/
+│   │   ├── profile_report.html
+│   │   └── sweetviz_report.html
+│   ├── scripts/
+│   │   ├── run_eda.py
+│   │   └── validate_reports.py
+│   ├── requirements.txt
+│   └── README.md
+│
+├── .gitignore
 └── README.md
 ```
-
-> The directory names above represent the learning areas. The actual repository contains the implementation folders and files for completed work, including Week 7.
 
 ## 📈 What I Learned
 
@@ -210,7 +238,7 @@ cynaris-internship-Harsh/
 - Writing SQL queries for analytical problems.
 - Cleaning, transforming and exploring datasets.
 - Performing statistical analysis and regression.
-- Building visualizations and analytical reports.
+- Building dashboards and analytical reports in Power BI, Looker Studio and Superset.
 - Using Python libraries for data processing and comparing their performance.
 - Connecting language models with databases through Vanna and FastAPI.
 - Automating EDA and validating generated outputs.
@@ -225,8 +253,6 @@ cynaris-internship-Harsh/
 - AI Agents and agentic workflows.
 - Production-ready AI applications.
 
-I aim to combine my Data Science foundation with practical AI Engineering skills.
-
 ## 👨‍💻 About Me
 
 **Harsh Sanchaniya**
@@ -238,7 +264,5 @@ MSc Data Science Student | Data Analytics Intern | Aspiring AI Engineer
 ## ⭐ Final Note
 
 This repository represents my continuous learning, practical experimentation and professional development throughout my internship at Cynaris Solutions.
-
-Every folder reflects a learning milestone, every project represents a practical challenge, and every commit documents my progress.
 
 **Learn → Build → Analyze → Improve → Repeat.**
