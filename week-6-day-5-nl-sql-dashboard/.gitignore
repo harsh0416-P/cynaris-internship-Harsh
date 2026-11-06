@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+venv/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+/3477cdab157537bd/
