@@ -1,0 +1,56 @@
+
+1. Total Sales
+2261536.7827000003
+
+2. Top 5 Cities
+City
+New York City    252462.547
+Los Angeles      173420.181
+Seattle          116106.322
+San Francisco    109041.120
+Philadelphia     108841.749
+Name: Sales, dtype: float64
+
+3. Highest Sales Category
+Technology
+
+4. Average Sales
+230.7690594591837
+
+5. Sales by Region
+Region
+Central    492646.9132
+East       669518.7260
+South      389151.4590
+West       710219.6845
+Name: Sales, dtype: float64
+
+6. Highest Sales Segment
+Consumer
+
+7. Top 10 Products
+Product Name
+Canon imageCLASS 2200 Advanced Copier                                          61599.824
+Fellowes PB500 Electric Punch Plastic Comb Binding Machine with Manual Bind    27453.384
+Cisco TelePresence System EX90 Videoconferencing Unit                          22638.480
+HON 5400 Series Task Chairs for Big and Tall                                   21870.576
+GBC DocuBind TL300 Electric Binding System                                     19823.479
+GBC Ibimaster 500 Manual ProClick Binding System                               19024.500
+Hewlett Packard LaserJet 3310 Copier                                           18839.686
+HP Designjet T520 Inkjet Large Format Printer - 24" Color                      18374.895
+GBC DocuBind P400 Electric Binding System                                      17965.068
+High Speed Automatic Electric Letter Opener                                    17030.312
+Name: Sales, dtype: float64
+
+8. Unique Order IDs
+4922
+
+9. Highest Sales Month
+11
+
+10. Sales by Category
+Category
+Furniture          728658.5757
+Office Supplies    705422.3340
+Technology         827455.8730
+Name: Sales, dtype: float64

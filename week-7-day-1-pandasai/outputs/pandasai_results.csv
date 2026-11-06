@@ -1,0 +1,49 @@
+Question,Answer,Status,Time_seconds
+Calculate the total sum of Sales.,2261536.7827000003,Returned - verify manually,0.21
+What are the top 5 cities by total Sales?,"            City       Sales
+0  New York City  252462.547
+1    Los Angeles  173420.181
+2        Seattle  116106.322
+3  San Francisco  109041.120
+4   Philadelphia  108841.749",Returned - verify manually,12.36
+Which Category has the highest total Sales?,"Unfortunately, I was not able to answer your question, because of the following error:
+
+No code found in the response
+",Failed,20.38
+Calculate the average Sales.,"Unfortunately, I was not able to answer your question, because of the following error:
+
+No code found in the response
+",Failed,23.44
+Show total Sales grouped by Region.,"               Sales
+Region              
+Central  492646.9132
+East     669518.7260
+South    389151.4590
+West     710219.6845",Returned - verify manually,7.28
+Which Segment generates the highest total Sales?,"Unfortunately, I was not able to answer your question, because of the following error:
+
+name 'list_of_dfs' is not defined
+",Failed,30.72
+Show the top 10 Product Names by total Sales.,"                                           Product Name  Total Sales
+404               Canon imageCLASS 2200 Advanced Copier    61599.824
+649   Fellowes PB500 Electric Punch Plastic Comb Bin...    27453.384
+444   Cisco TelePresence System EX90 Videoconferenci...    22638.480
+785        HON 5400 Series Task Chairs for Big and Tall    21870.576
+685          GBC DocuBind TL300 Electric Binding System    19823.479
+...                                                 ...          ...
+97                    Acme Serrated Blade Letter Opener        7.632
+783                                 Grip Seal Envelopes        7.072
+1792                                           Xerox 20        6.480
+208                                             Avery 5        5.760
+604   Eureka Disposable Bags for Sanitaire Vibra Gro...        1.624
+
+[1849 rows x 2 columns]",Returned - verify manually,15.7
+How many unique Order IDs are present?,4922,Returned - verify manually,1.43
+Which month has the highest total Sales? Use Order Date.,"Unfortunately, I was not able to answer your question, because of the following error:
+
+[Errno 2] No such file or directory: 'sales_data.csv'
+",Failed,30.59
+Show total Sales grouped by Category.,"Unfortunately, I was not able to answer your question, because of the following error:
+
+No code found in the response
+",Failed,15.88
