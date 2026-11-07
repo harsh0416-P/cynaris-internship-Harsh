@@ -1,0 +1,16 @@
+column,missing_values,unique_values
+listing_id,0,600
+city,0,8
+locality,0,218
+type,0,7
+area_sqft,0,546
+price_per_sqft,0,588
+total_price_lakh,0,596
+age_years,0,21
+floor,0,26
+parking,0,2
+furnished,0,3
+listed_date,0,405
+days_on_market,0,305
+transaction_type,0,2
+sold,0,2
