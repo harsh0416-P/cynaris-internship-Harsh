@@ -1,0 +1,2 @@
+model,samples,MAE,RMSE,MAPE_percent
+Median Dummy Baseline - 5 Fold CV,54,5491.851851851852,6873.593355761626,59.4760261388439
