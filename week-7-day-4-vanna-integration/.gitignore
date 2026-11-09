@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.db
+sql_audit.jsonl
+.venv/
+3477cdab157537bd/
