@@ -38,3 +38,9 @@ The initial SQL guard failed to prevent a DELETE operation, resulting in acciden
 
 The W7D4 implementation now includes natural-language SQL querying, example-based agent memory, SQL audit logging and SQLite read-only execution protection.
 
+
+## 8. Implementation Files
+- main.py: FastAPI and Vanna integration
+- training_data.py: Five SQL examples
+- sql_audit.py: SQL audit logging and read-only SQLite execution
+- test_sql_safety.py: Read-only security test
