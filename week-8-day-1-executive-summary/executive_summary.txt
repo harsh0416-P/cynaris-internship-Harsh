@@ -1,0 +1,14 @@
+**Executive Summary**
+
+The analysis of 200 customers generating Rs 4,992,621 in total revenue reveals clear concentration of performance across geography, acquisition channel, and age segment. **City performance** is led by Pune (Rs 1,102,350), followed by Mumbai (Rs 926,771) and Hyderabad (Rs 847,312); the remaining five cities each contribute between Rs 620k and Rs 720k. **Channel performance** shows the App as the top source of revenue (Rs 1,468,234), with Offline (Rs 1,299,449), Website (Rs 1,242,438) and Marketplace (Rs 982,500) trailing. **Age‑group revenue** is highest among customers aged 45‑54 (Rs 1,365,174) and 55+ (Rs 1,075,519), while the 18‑24 cohort still delivers a solid Rs 1,002,911.
+
+Churn is low: 6 customers have left, representing a **3 % churn percentage** of the base. The average revenue per customer is Rs 24,963 and the average order count per customer is 11.54, indicating relatively strong per‑customer value.
+
+**Recommendations**  
+- **Prioritize growth in Pune and Mumbai** through localized marketing and partnership initiatives, leveraging the strong existing revenue base.  
+- **Invest in the App channel**, which outperforms other acquisition sources, by enhancing user experience and expanding in‑app promotions.  
+- **Target high‑value age segments (45‑54 and 55+)** with tailored product bundles and loyalty programs to deepen spend.  
+- **Implement a focused retention program** aimed at the 3 % churned segment, using win‑back offers and proactive service outreach to prevent further attrition.  
+- **Balance channel mix** by testing offline and marketplace tactics that can capture additional share without cannibalizing the high‑performing App channel.
+
+These actions align with the observed revenue distribution and aim to sustain growth while minimizing churn.
