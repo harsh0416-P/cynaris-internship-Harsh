@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cynaris CIA | AI Analytics</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">C</div>
+            <div>
+                <h2>Cynaris<span> CIA</span></h2>
+                <small>INTELLIGENCE PLATFORM</small>
+            </div>
+        </div>
+
+        <div class="sidebar-label">WORKSPACE</div>
+
+        <nav class="navigation">
+            <a href="#" class="nav-item active">
+                <span>▦</span> Overview
+            </a>
+            <a href="#uploadSection" class="nav-item">
+                <span>↑</span> Upload Dataset
+            </a>
+            <a href="#analystSection" class="nav-item">
+                <span>✧</span> AI Analyst
+            </a>
+            <a href="#chartSection" class="nav-item">
+                <span>▥</span> Visualizations
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="sidebar-status">
+                <span class="status-dot"></span>
+                <div>
+                    <strong>System Online</strong>
+                    <small>Local AI environment</small>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                Cynaris Solutions<br>
+                <span>Data Analyst Internship · W7D5</span>
+            </div>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- TOP HEADER -->
+        <header class="topbar">
+
+            <div>
+                <div class="breadcrumb">Workspace / Overview</div>
+                <h1>Data Intelligence</h1>
+                <p>Analyze your data with AI-powered insights.</p>
+            </div>
+
+            <div class="topbar-actions">
+
+                <div class="system-indicator">
+                    <span class="status-dot"></span>
+                    API Connected
+                </div>
+
+                <button id="themeToggle" class="theme-toggle"
+                        aria-label="Toggle dark and light theme">
+                    <span id="themeIcon">☾</span>
+                    <span id="themeText">Dark mode</span>
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- WELCOME -->
+        <section class="welcome-section">
+
+            <div>
+                <span class="eyebrow">AI DATA ANALYST</span>
+                <h2>Turn your data into <span>decisions.</span></h2>
+                <p>Upload a dataset, ask questions and discover meaningful insights.</p>
+            </div>
+
+            <div class="welcome-decoration">✧</div>
+
+        </section>
+
+
+        <!-- KPI CARDS -->
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    <span>Total Records</span>
+                    <div class="stat-icon blue">▤</div>
+                </div>
+                <h2 id="totalRows">0</h2>
+                <small>Rows analyzed</small>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    <span>Data Columns</span>
+                    <div class="stat-icon purple">▦</div>
+                </div>
+                <h2 id="totalColumns">0</h2>
+                <small>Available attributes</small>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-top">
+                    <span>Missing Values</span>
+                    <div class="stat-icon orange">!</div>
+                </div>
+                <h2 id="missingValues">0</h2>
+                <small>Data quality indicator</small>
+            </div>
+
+        </section>
+
+
+        <!-- UPLOAD SECTION -->
+        <section class="panel" id="uploadSection">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">DATA MANAGEMENT</span>
+                    <h2>Upload your dataset</h2>
+                    <p>Import a CSV file to begin your analysis.</p>
+                </div>
+
+                <div class="heading-icon">↑</div>
+            </div>
+
+            <div class="upload-area">
+
+                <div class="upload-symbol">⇧</div>
+
+                <h3>Choose your CSV dataset</h3>
+
+                <p>Upload a CSV file up to 20 MB</p>
+
+                <input type="file" id="csvFile" accept=".csv">
+
+                <div class="file-info" id="fileName">
+                    No file selected
+                </div>
+
+                <button id="uploadBtn" class="primary-btn">
+                    Upload Dataset
+                </button>
+
+                <p id="uploadStatus" class="upload-status">
+                    Waiting for dataset...
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- AI ANALYST -->
+        <section class="panel" id="analystSection">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">INTELLIGENT ANALYSIS</span>
+                    <h2>Ask CIA Data Analyst</h2>
+                    <p>Ask questions about your uploaded dataset.</p>
+                </div>
+
+                <div class="ai-badge">
+                    <span class="status-dot"></span>
+                    AI Ready
+                </div>
+            </div>
+
+            <div class="question-area">
+
+                <textarea
+                    id="question"
+                    placeholder="Example: Which category has the highest sales?"
+                ></textarea>
+
+                <div class="question-footer">
+
+                    <span>✧ Ask questions in natural language</span>
+
+                    <button id="analyzeBtn" class="primary-btn">
+                        Analyze Dataset →
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="suggestions">
+                <span>Try asking:</span>
+
+                <button class="suggestion" data-question="What is the total sales for each category?">
+                    Sales by category
+                </button>
+
+                <button class="suggestion" data-question="Show total sales by region.">
+                    Sales by region
+                </button>
+
+                <button class="suggestion" data-question="Which city has the highest sales?">
+                    Top city
+                </button>
+            </div>
+
+            <div class="answer-panel">
+
+                <div class="answer-heading">
+                    <div class="answer-avatar">✧</div>
+
+                    <div>
+                        <strong>CIA Analysis</strong>
+                        <small>Analysis result</small>
+                    </div>
+
+                    <span id="answerSource" class="source-badge">
+                        Waiting
+                    </span>
+                </div>
+
+                <div id="answer" class="answer-content">
+                    Your analysis results will appear here.
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CHART SECTION -->
+        <section class="panel chart-panel" id="chartSection">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">DATA VISUALIZATION</span>
+                    <h2>Visual Insights</h2>
+                    <p>Interactive visualizations generated from your dataset.</p>
+                </div>
+
+                <div class="heading-icon">▥</div>
+            </div>
+
+            <div class="chart-container" id="chartContainer">
+
+                <canvas id="salesChart"></canvas>
+
+                <div id="chartEmpty" class="chart-empty">
+                    <div>▥</div>
+                    <h3>No visualization yet</h3>
+                    <p>Ask CIA to create a chart from your dataset.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="page-footer">
+            <span>© 2026 Cynaris CIA · AI Data Analyst</span>
+            <span>Built with PandasAI · FastAPI · Chart.js</span>
+        </footer>
+
+    </main>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
