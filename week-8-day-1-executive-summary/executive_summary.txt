@@ -1,0 +1,11 @@
+**Executive Summary**
+
+The current customer base comprises 200 individuals who generated total revenue of **Rs 4,992,621** across **2,307 orders**, yielding an average revenue of **Rs 24,963** per customer and an average of **11.54 orders** per customer. Revenue distribution by city shows Pune leading with **Rs 1,102,350**, followed by Mumbai (**Rs 926,771**), Hyderabad (**Rs 847,312**), Delhi (**Rs 767,386**), Bangalore (**Rs 720,507**) and Chennai (**Rs 628,295**). By acquisition channel, the App channel contributed the most revenue (**Rs 1,468,234**), with Offline (**Rs 1,299,449**), Website (**Rs 1,242,438**) and Marketplace (**Rs 982,500**) trailing. Age‑band analysis indicates the 45‑54 segment generated the highest revenue (**Rs 1,365,174**), followed by the 55+ group (**Rs 1,075,519**), 18‑24 (**Rs 1,002,911**), 25‑34 (**Rs 883,331**) and 35‑44 (**Rs 665,686**).
+
+Six customers (3 % of the dataset) are flagged as churned. While the churn rate is quantified, no benchmark is applied to assess its relative magnitude.
+
+**Recommendations**
+- Conduct a detailed profiling of the six churn‑flagged customers to identify common attributes (e.g., city, acquisition channel, age band, purchase frequency).
+- Test targeted retention initiatives based on the identified characteristics, monitoring their impact on future churn indicators.
+
+These steps will help clarify drivers of churn and inform data‑driven retention strategies.
