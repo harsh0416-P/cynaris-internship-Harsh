@@ -207,16 +207,26 @@ Write an executive summary of approximately 200 words.
 
 Use ONLY the verified data below.
 
+
+
 Requirements:
-- Explain the major business findings.
-- Discuss city, channel and age-group performance.
-- Explain the churn percentage accurately.
-- Include practical business recommendations.
-- Do not invent figures or unsupported explanations.
-- Do not claim that revenue totals prove individual
-  customer spending performance.
-- Do not claim a monthly or annual churn rate.
-- Clearly distinguish facts from recommendations.
+- Write approximately 200 words in clear, professional business English.
+- Explain the major findings using only the verified data.
+- Discuss city, acquisition channel and age-group revenue.
+- State that 6 of 200 customers (3%) are flagged as churned.
+- Never say these customers have left or explain why they churned.
+- Do not describe churn as low or high without a benchmark.
+- Do not interpret the churn percentage as small, large, high or low without a benchmark.
+- Do not mention early churn signals, churn timing or causes unless verified data supports them.
+- Recommend investigating the characteristics of customers flagged as churned and evaluating potential retention actions.
+- Do not claim that any acquisition channel is more profitable or efficient.
+- Do not invent causes for differences in revenue.
+- Do not claim revenue totals prove individual customer spending performance.
+- Do not claim monthly or annual churn rates.
+- Present recommendations as suggestions to investigate or test, not proven outcomes.
+- Do not introduce figures that are absent from the verified data.
+- Clearly distinguish observed facts from recommendations.
+
 
 VERIFIED DATA:
 {data}
