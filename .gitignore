@@ -1,7 +1,17 @@
+
 # Python cache
 __pycache__/
 *.py[cod]
 
-# Virtual environments
+# Python virtual environments
 .venv/
+venv/
 venv-1/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Browser-generated evidence assets
+*_files/

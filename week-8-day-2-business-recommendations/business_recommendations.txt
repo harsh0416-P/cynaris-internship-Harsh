@@ -1,0 +1,25 @@
+**SECTION 1 – EXECUTIVE SUMMARY**  
+
+The dataset covers 200 customers who generated **Rs 4,992,621** across **2,307** orders (≈ 11.5 orders per customer).  The overall churn rate is **3 %** (6 customers).  Revenue per customer averages **Rs 24,963**.  
+
+**Geography:** Pune (39 customers) and Bangalore (27 customers) show the highest observed churn rates at **7.69 %** and **7.41 %**, respectively, while Mumbai, Hyderabad and Chennai recorded **0 %** churn.  Pune also delivers the highest city‑level average revenue (**Rs 28,265**) and Bangalore is above the overall average (**Rs 26,685**).  
+
+**Acquisition channel:** The App channel (51 customers) yields the highest average revenue (**Rs 28,789**) but also a churn rate of **3.92 %**.  The Offline channel (49 customers) has the second‑highest churn (**6.12 %**) and a solid average revenue (**Rs 26,519**).  The Website channel (57 customers) shows **0 %** churn yet the lowest average revenue (**Rs 21,797**).  
+
+**Age profile:** Customers aged 45‑54 and 25‑34 generate the highest average revenue (≈ Rs 26,768), while the 35‑44 segment records the lowest (**Rs 21,474**).  The 55+ segment’s average revenue (**Rs 23,381**) sits below the overall mean.  
+
+These patterns suggest that churn is not uniformly distributed across cities or acquisition channels, and that revenue potential varies by both geography and customer age.  Targeted investigations into the higher‑churn locations and lower‑revenue segments could uncover actionable levers for improving retention and monetisation.
+
+---
+
+**SECTION 2 – FIVE BUSINESS RECOMMENDATIONS**
+
+| # | Finding (data‑driven observation) | Recommendation (experiment to test) | Expected Business Benefit (potential impact) |
+|---|-----------------------------------|--------------------------------------|----------------------------------------------|
+| 1 | **Pune and Bangalore exhibit the highest churn rates (7.69 % and 7.41 %) despite above‑average revenue per customer.** | Run a controlled pilot of a “city‑specific retention bundle” (e.g., loyalty points + localized support) for a random half of the customers in each city and compare churn after 3 months. | If churn in the test group falls toward the overall 3 % rate, the company could retain up to ≈ 3 additional customers in these cities, preserving the associated revenue (≈ Rs 28 k × 3 ≈ Rs 84 k). |
+| 2 | **The Offline acquisition channel shows the highest churn (6.12 %) among channels, while still delivering strong average revenue (Rs 26,519).** | Conduct a split‑test of an enhanced onboarding workflow for new Offline customers (e.g., digital welcome kit, follow‑up call) versus the current process. | A modest reduction of Offline churn to the overall 3 % level would retain ~1.5 customers (rounded to 1‑2), protecting roughly Rs 26‑53 k of revenue. |
+| 3 | **Website‑acquired customers have 0 % churn but the lowest average revenue (Rs 21,797).** | Introduce an upsell/cross‑sell campaign (e.g., premium features) to a random subset of Website customers and measure changes in average revenue per customer over the next quarter. | Successful upsell could lift the average revenue of this segment toward the overall mean (≈ Rs 24,963), potentially adding Rs 3‑4 k per affected customer. |
+| 4 | **The 35‑44 age band generates the lowest average revenue (Rs 21,474) despite representing 31 customers.** | Test a targeted product‑mix experiment: offer a curated bundle of higher‑margin items to a random half of the 35‑44 cohort and track revenue per customer. | If the bundle raises average revenue to the dataset’s overall level, the segment could contribute an additional ≈ Rs 3.5 k × 15 ≈ Rs 52 k. |
+| 5 | **Overall churn is low (3 %) but concentrated in a few cities and channels.** | Implement a “early‑warning” analytics dashboard that flags customers in high‑churn cities/channels after their third order, then trigger a retention outreach. Run a 6‑week A/B test comparing outreach vs. no outreach. | Demonstrating a reduction in churn for the flagged group would provide a scalable model for protecting revenue across the entire base. |
+
+*All recommendations are framed as experiments; actual benefits will depend on the outcomes of the tests and the assumptions stated above.*
