@@ -1,84 +1,62 @@
-
-import os
+﻿import os
 from dotenv import load_dotenv
 from groq import Groq
 
-# Load existing W8D1 API configuration
-ENV_PATH = (
-    r"D:\Cynaris-Internship"
-    r"\week-8-day-1-executive-summary\.env"
-)
-
+ENV_PATH = r"D:\Cynaris-Internship\week-8-day-1-executive-summary\.env"
 load_dotenv(ENV_PATH)
 
 api_key = os.getenv("GROQ_API_KEY")
 
 if not api_key:
-    raise ValueError("Groq API key not found. Check the W8D1 .env file.")
+    raise ValueError("GROQ_API_KEY not found in environment file.")
 
 client = Groq(api_key=api_key)
 
-MODEL = "openai/gpt-oss-120b"
+MODEL = "openai/gpt-oss-20b"
 
 
-def generate_executive_summary(insights):
-    """Generate an approximately 200-word business summary."""
-
+def generate_executive_summary(insights, total_sales=None):
     prompt = f"""
-You are a professional business data analyst.
+You are a professional data analyst.
 
-Write an executive summary of approximately 200 words
-using ONLY the following verified business insights.
+Write a concise, factual executive summary of the Superstore Sales Dataset.
 
-DATASET: Superstore Sales Dataset
-TOTAL SALES: $2,261,536.78
+Dataset period: 2015 to 2018.
+Total sales: {total_sales if total_sales is not None else "See supplied insights"}
 
-FIVE VERIFIED INSIGHTS:
+Verified insights:
 {insights}
 
-Requirements:
-1. Explain the major business performance findings.
-2. Include relevant figures and percentages.
-3. Use professional business language.
-4. Do not invent data or unsupported explanations.
-5. Do not confuse sales revenue with profit.
-6. Do not claim that correlation proves causation.
-7. Include a short business outlook.
-8. Target approximately 200 words.
-
-Return only the executive summary.
+STRICT RULES:
+- Use only the supplied figures.
+- Use a neutral, professional tone.
+- Do not predict future growth or performance.
+- Do not give business recommendations.
+- Do not claim market share.
+- Do not use the phrase year-to-date.
+- Do not describe performance as stable, balanced, or positive.
+- Do not invent causes or correlations.
+- Mention only facts supported by the data.
+- Keep the summary between 100 and 150 words.
+- Return plain text without Markdown formatting.
+- Never describe sales value as transaction or shipment frequency.
+- Say "Standard Class recorded the highest shipping-mode sales".
+- Do not describe the dataset as a complete financial picture.
 """
+
+    print("Sending request to Groq...")
 
     response = client.chat.completions.create(
         model=MODEL,
-        messages=[
-            {
-                "role": "user",
-                "content": prompt
-            }
-        ],
-        temperature=0.3,
-        max_tokens=500
+        messages=[{"role": "user", "content": prompt}],
+        reasoning_effort="low",
+        max_completion_tokens=4096
     )
 
-    return response.choices[0].message.content
+    summary = response.choices[0].message.content
 
+    if not summary or not summary.strip():
+        raise ValueError("Groq returned an empty summary.")
 
-if __name__ == "__main__":
-
-    business_insights = """
-    1. Technology generated $827,455.87 (36.59%).
-    2. West region generated $710,219.68 (31.40%).
-    3. Consumer segment generated $1,148,060.53 (50.76%).
-    4. Standard Class generated $1,340,831.31 (59.29%).
-    5. 2018 generated $722,052.02 (31.93%).
-    """
-
-    print("Generating AI Executive Summary...\n")
-
-    summary = generate_executive_summary(business_insights)
-
-    print("=" * 60)
-    print("AI EXECUTIVE SUMMARY")
-    print("=" * 60)
-    print(summary)
+    print("AI summary generated successfully.")
+    return summary.strip()

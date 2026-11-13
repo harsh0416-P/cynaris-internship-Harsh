@@ -98,7 +98,7 @@ yearly_sales = df.groupby("Year")["Sales"].sum()
 
 print("\n7. SALES BY YEAR")
 print(yearly_sales.sort_index())
-
+-
 # -----------------------------------------
 # 9. GENERATE FIVE KEY INSIGHTS
 # -----------------------------------------
