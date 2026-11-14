@@ -1,4 +1,4 @@
-
+import os
 import io
 import json
 from pathlib import Path
@@ -278,9 +278,9 @@ def calculate_insights(df):
 
 def generate_ai_report(insights):
 
-    load_dotenv(ENV_PATH)
+    load_dotenv()
 
-    api_key = __import__("os").getenv("GROQ_API_KEY")
+    api_key = os.getenv("GROQ_API_KEY")
 
     if not api_key:
         raise ValueError(
