@@ -80,3 +80,16 @@ This project is maintained as a local internship deliverable. External deploymen
 ## Internship
 
 Cynaris Data Analyst Internship — Week 8 Day 5.
+## Key Business Insights
+
+| Metric | Value |
+|---|---:|
+| Total Properties | 600 |
+| Average Property Price | ₹229.1 lakh |
+| Average Market Duration | 183.7 days |
+| Highest Average Price City | Bengaluru |
+| Highest Average Price | ₹267.77 lakh |
+| Most Expensive Property Type | Villa |
+| Highest Property Type Average | ₹502.21 lakh |
+| Missing Values | 0 |
+| Duplicate Rows | 0 |
