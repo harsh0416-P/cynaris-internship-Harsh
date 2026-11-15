@@ -5,19 +5,19 @@ AI Data Platform — EDA and Business Reporting
 
 | Test | Expected Result | Status |
 |---|---|---|
-| Notebook execution | All cells execute successfully | Pending verification |
 | Dataset loading | 600 rows and 15 columns | PASS |
-| Missing-value check | 0 missing values | PASS |
-| Duplicate check | 0 duplicate rows | PASS |
-| Business summary | CSV exported | Pending verification |
-| City price chart | PNG generated | Pending verification |
-| Property type chart | PNG generated | Pending verification |
-| Market duration chart | PNG generated | Pending verification |
-| Output verification | All required files exist | Pending verification |
+| Missing-value validation | 0 missing values | PASS |
+| Duplicate validation | 0 duplicate rows | PASS |
+| Business insights | Summary generated | PASS |
+| Business summary CSV | Exported successfully | PASS |
+| City price chart | PNG generated | PASS |
+| Property type chart | PNG generated | PASS |
+| Market duration chart | PNG generated | PASS |
+| Final notebook execution | All cells execute successfully | Pending final verification |
 | External deployment | Written authorization | BLOCKED |
 
 ## Conclusion
 
-The initial dataset validation and business analysis executed successfully. Remaining output-generation tests must be verified after running the final notebook cells.
+Dataset validation and business analysis were executed successfully. The business summary and three visualization files were generated and verified in the W8D5 output folder.
 
-External deployment remains pending authorization.
+External deployment remains pending written authorization under the confidentiality policy.
