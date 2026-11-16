@@ -1,0 +1,33 @@
+
+    BUSINESS DATASET - EDA REPORT
+
+    Rows: 100000
+    Columns: 6
+    Missing Values: 0
+    Duplicate Rows: 0
+
+    Column Names:
+    ['sale_id', 'city', 'category', 'product', 'quantity', 'amount']
+
+    Data Types:
+    sale_id     int64
+city          str
+category      str
+product       str
+quantity    int64
+amount      int64
+
+    Summary Statistics:
+                  sale_id       city     category product       quantity         amount
+count   100000.000000     100000       100000  100000  100000.000000  100000.000000
+unique            NaN          4            4       4            NaN            NaN
+top               NaN  Bengaluru  Electronics  Laptop            NaN            NaN
+freq              NaN      25000        25000   25000            NaN            NaN
+mean     50000.500000        NaN          NaN     NaN       5.500000   25050.000000
+std      28867.657797        NaN          NaN     NaN       2.872296   14433.800031
+min          1.000000        NaN          NaN     NaN       1.000000     100.000000
+25%      25000.750000        NaN          NaN     NaN       3.000000   12575.000000
+50%      50000.500000        NaN          NaN     NaN       5.500000   25050.000000
+75%      75000.250000        NaN          NaN     NaN       8.000000   37525.000000
+max     100000.000000        NaN          NaN     NaN      10.000000   50000.000000
+    
