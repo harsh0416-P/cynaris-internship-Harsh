@@ -1,0 +1,8 @@
+SALES AMOUNT PREDICTION MODEL
+========================================
+Dataset rows: 100000
+Training rows: 80000
+Testing rows: 20000
+MAE: 12450.8643
+RMSE: 14382.7737
+R2: 0.0015

@@ -1,0 +1,4 @@
+Experiment: W9D2_Model_Registry
+Run ID: 0199bd8d64464de2886ea592f872a20f
+Model Name: CynarisSalesAmountModel
+Model URI: models:/m-76872b6adc284a309a52bbddcd268a33
