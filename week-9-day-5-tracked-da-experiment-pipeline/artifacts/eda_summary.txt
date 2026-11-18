@@ -1,0 +1,10 @@
+W9D5 TRACKED EDA REPORT
+======================
+Total records: 100000
+Total columns: 6
+Missing values: 0
+Duplicate rows: 0
+Total revenue: 2505000000.00
+Average order value: 25050.00
+Total quantity: 550000
+Top revenue city: Ahmedabad
