@@ -1,0 +1,9 @@
+Variable,Mean,Median,Minimum,Maximum,Standard Deviation
+area_sqft,2204.09,2195.5,406.0,4000.0,1029.9
+price_per_sqft,10444.07,8401.0,2574.0,23900.0,6214.61
+total_price_lakh,229.1,172.6,15.71,914.71,183.75
+age_years,10.02,10.0,0.0,20.0,6.13
+floor,12.46,13.0,0.0,25.0,7.53
+parking,0.67,1.0,0.0,1.0,0.47
+days_on_market,183.7,185.5,1.0,365.0,105.18
+sold,0.35,0.0,0.0,1.0,0.48
