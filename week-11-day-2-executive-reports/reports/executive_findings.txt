@@ -1,0 +1,6 @@
+The dataset contains 600 records and 15 columns.
+The dataset contains 0 missing cells.
+The dataset contains 0 duplicate records.
+area_sqft: mean = 2204.09, minimum = 406.00, maximum = 4000.00.
+price_per_sqft: mean = 10444.07, minimum = 2574.00, maximum = 23900.00.
+total_price_lakh: mean = 229.10, minimum = 15.71, maximum = 914.71.
