@@ -1,0 +1,10 @@
+KPI,Value
+Total Records,600.0
+Total Columns,15.0
+Numeric Columns,8.0
+Categorical Columns,7.0
+Duplicate Records,0.0
+Missing Cells,0.0
+Average area_sqft,2204.09
+Maximum area_sqft,4000.0
+Minimum area_sqft,406.0
