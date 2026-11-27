@@ -1,0 +1,17 @@
+{
+    "dataset_rows": 600,
+    "dataset_columns": 15,
+    "missing_values": 0,
+    "duplicate_listing_ids": 0,
+    "date_range": {
+        "start": "2023-01-02",
+        "end": "2024-12-30"
+    },
+    "sold_flag_counts": {
+        "0": 391,
+        "1": 209
+    },
+    "top_city_by_listing_count": "Chennai",
+    "highest_median_price_property_type": "Villa",
+    "longest_median_market_duration_type": "Commercial"
+}
