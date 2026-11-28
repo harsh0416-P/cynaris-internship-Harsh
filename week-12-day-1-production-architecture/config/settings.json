@@ -1,0 +1,14 @@
+{
+    "project_name": "Indian Business Data Platform",
+    "environment": "development",
+    "log_level": "INFO",
+    "dataset": "data/indian_business_data.csv",
+    "output_directory": "outputs",
+    "chart_directory": "outputs/charts",
+    "validation": {
+        "check_duplicate_ids": true,
+        "check_missing_columns": true,
+        "check_invalid_dates": true,
+        "check_positive_prices": true
+    }
+}
