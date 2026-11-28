@@ -1,0 +1,8 @@
+type,listing_count,average_price_lakh,median_price_lakh,median_price_per_sqft
+Villa,93,502.21,506.43,22870.0
+4BHK,93,331.91,341.11,14367.0
+3BHK,77,217.95,212.93,9554.0
+Commercial,90,181.58,176.4,8361.5
+2BHK,79,137.3,135.66,6943.0
+1BHK,89,105.54,102.88,5104.0
+Plot,79,82.55,72.57,3795.0
